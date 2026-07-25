@@ -1,0 +1,2037 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SparxX Ltd | Nucleus Hydrolyzer</title>
+  <meta name="description" content="Advanced hydrogen-on-demand systems that make combustion cleaner, more efficient, and ready for the low-carbon economy." />
+  <link rel="canonical" href="https://greenh2o.biz/" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SparxX" />
+  <meta property="og:title" content="SparxX Ltd | Nucleus Hydrolyzer" />
+  <meta property="og:description" content="Advanced hydrogen-on-demand systems that make combustion cleaner, more efficient, and ready for the low-carbon economy." />
+  <meta property="og:url" content="https://greenh2o.biz/" />
+  <meta property="og:image" content="https://greenh2o.biz/assets/n3-banner.png" />
+  <meta property="og:locale" content="en_MY" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SparxX Ltd | Nucleus Hydrolyzer" />
+  <meta name="twitter:description" content="Advanced hydrogen-on-demand systems that make combustion cleaner, more efficient, and ready for the low-carbon economy." />
+  <meta name="twitter:image" content="https://greenh2o.biz/assets/n3-banner.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "SparxX Ltd",
+    "url": "https://greenh2o.biz/",
+    "logo": "https://greenh2o.biz/assets/sparxx-logo.png",
+    "description": "Developer of the Nucleus hydrogen-on-demand hydrolyzer system for internal combustion engines.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "30-2, Jalan Metro Pudu, Fraser Business Park, Off Jalan Yew",
+      "addressLocality": "Kuala Lumpur",
+      "postalCode": "55100",
+      "addressCountry": "MY"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Nucleus Hydrolyzer",
+    "brand": { "@type": "Brand", "name": "SparxX" },
+    "description": "Hydrogen-on-demand system that retrofits to existing internal combustion engines, cutting fuel consumption and emissions without engine modification.",
+    "image": "https://greenh2o.biz/assets/n3-banner.png",
+    "manufacturer": { "@type": "Organization", "name": "SparxX Ltd" }
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy: #0A1628;
+      --navy2: #102036;
+      --navy3: #213145;
+      --green: #006948;
+      --green2: #68dba9;
+      --emerald-deep: #064E3B;
+      --green-light: #85f8c4;
+      --green-pale: #e7f5ee;
+      --hydro: #1E5FD4;
+      --white: #ffffff;
+      --off-white: #eff4ff;
+      --bg: #f8f9ff;
+      --gray: #535f74;
+      --gray2: #6d7a72;
+      --border: #bccac0;
+      --border2: #6d7a72;
+      --text: #0b1c30;
+      --heading: 'Manrope', sans-serif;
+      --body: 'Hanken Grotesk', system-ui, sans-serif;
+      --shadow-sm: 0 1px 3px rgba(83,95,116,0.08), 0 1px 2px rgba(83,95,116,0.04);
+      --shadow: 0 4px 16px rgba(83,95,116,0.10), 0 2px 6px rgba(83,95,116,0.05);
+      --shadow-lg: 0 16px 40px rgba(83,95,116,0.14), 0 4px 14px rgba(83,95,116,0.06);
+      --r-sm: 0.25rem;
+      --r: 0.5rem;
+      --r-md: 0.75rem;
+      --r-lg: 1rem;
+      --r-xl: 1.5rem;
+      --r-full: 9999px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--body);
+      font-size: 16px;
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    /* ── TOP BAR ── */
+    .topbar {
+      background: var(--navy);
+      color: rgba(255,255,255,0.7);
+      font-size: 0.78rem;
+      padding: 0.45rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .topbar a { color: var(--green2); text-decoration: none; }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+    }
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      height: 68px;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+    .nav-logo-mark {
+      height: 94px;
+      width: auto;
+      display: block;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+    .nav-logo-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+    .nav-logo-text strong {
+      font-family: var(--heading);
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--navy);
+      letter-spacing: 0.01em;
+    }
+    .nav-links {
+      display: flex;
+      gap: 0;
+      list-style: none;
+      margin-left: auto;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--gray);
+      font-size: 0.85rem;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      border-radius: var(--r);
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+    .nav-links a:hover { color: var(--navy); background: var(--green-pale); }
+    .nav-cta {
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 0.55rem 1.25rem;
+      background: var(--green);
+      color: var(--white);
+      border-radius: var(--r);
+      transition: all 0.2s;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .nav-cta:hover { background: var(--navy); }
+    .hamburger { display: none; cursor: pointer; background: none; border: none; padding: 6px; flex-direction: column; gap: 5px; }
+    .hamburger span { display: block; width: 22px; height: 2px; background: var(--navy); transition: all 0.3s; transform-origin: center; }
+
+    /* mobile overlay */
+    .mobile-overlay {
+      position: fixed; inset: 0; z-index: 98;
+      background: var(--white);
+      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.5rem;
+      opacity: 0; pointer-events: none;
+      transition: opacity 0.3s;
+    }
+    .mobile-overlay.open { opacity: 1; pointer-events: all; }
+    .mobile-overlay a {
+      font-family: var(--heading);
+      font-size: 1.75rem; font-weight: 700;
+      color: var(--navy); text-decoration: none;
+      opacity: 0; transform: translateY(12px);
+      transition: all 0.4s;
+    }
+    .mobile-overlay.open a { opacity: 1; transform: translateY(0); }
+    .mobile-overlay.open a:nth-child(1) { transition-delay: 0.05s; }
+    .mobile-overlay.open a:nth-child(2) { transition-delay: 0.1s; }
+    .mobile-overlay.open a:nth-child(3) { transition-delay: 0.15s; }
+    .mobile-overlay.open a:nth-child(4) { transition-delay: 0.2s; }
+    .mobile-overlay.open a:nth-child(5) { transition-delay: 0.25s; }
+
+    /* ── HERO ── */
+    #home {
+      background: var(--navy);
+      position: relative;
+      overflow: hidden;
+      min-height: 100dvh;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-grid-bg {
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+      background-size: 48px 48px;
+      pointer-events: none;
+    }
+    .hero-video-bg {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .hero-video-bg video {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .hero-gradient {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 65% 35%, rgba(0,105,72,0.22) 0%, transparent 60%),
+        radial-gradient(ellipse 70% 55% at 12% 88%, rgba(30,95,212,0.18) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: var(--navy);
+      opacity: 0.5;
+      pointer-events: none;
+    }
+    .hero-accent-line {
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 4px;
+      background: linear-gradient(to bottom, transparent, var(--green), transparent);
+    }
+
+    .hero-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 6rem 2rem;
+      position: relative;
+      z-index: 1;
+      width: 100%;
+    }
+    .hero-content { max-width: 640px; }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 0.85rem;
+      background: rgba(0,105,72,0.15);
+      border: 1px solid rgba(0,105,72,0.35);
+      border-radius: var(--r-full);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--green2);
+      margin-bottom: 1.75rem;
+    }
+    .hero-tag-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--green2);
+    }
+
+    .hero-kicker {
+      font-family: var(--heading);
+      font-size: clamp(1.1rem, 2vw, 1.4rem);
+      font-weight: 700;
+      color: var(--green2);
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-inner h1 {
+      font-family: var(--heading);
+      font-size: clamp(2.5rem, 5vw, 4.25rem);
+      font-weight: 800;
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+      color: var(--white);
+      margin-bottom: 1.5rem;
+    }
+    .hero-inner h1 em {
+      font-style: italic;
+      color: var(--green2);
+    }
+
+    .hero-sub {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.65);
+      max-width: 500px;
+      margin-bottom: 2.5rem;
+      font-weight: 300;
+      line-height: 1.75;
+    }
+
+    .hero-actions {
+      display: flex; gap: 1rem; flex-wrap: wrap;
+    }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.85rem 1.75rem;
+      background: var(--green);
+      color: var(--white);
+      font-weight: 600; font-size: 0.9rem;
+      border-radius: var(--r); text-decoration: none; border: none; cursor: pointer;
+      transition: all 0.2s;
+    }
+    .btn-primary:hover { background: var(--emerald-deep); transform: translateY(-1px); box-shadow: 0 8px 24px rgba(0,105,72,0.35); }
+    .btn-outline {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.85rem 1.75rem;
+      background: transparent;
+      color: var(--white);
+      font-weight: 500; font-size: 0.9rem;
+      border-radius: var(--r); text-decoration: none;
+      border: 1px solid rgba(255,255,255,0.25);
+      transition: all 0.2s;
+    }
+    .btn-outline:hover { border-color: rgba(255,255,255,0.5); background: rgba(255,255,255,0.06); }
+
+    /* ── EVIDENCE BAR ── */
+    .evidence-bar { background: var(--navy2); border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .evidence-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2.5rem 2rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .evidence-tagline {
+      grid-column: 1 / -1;
+      text-align: center;
+      font-family: var(--heading);
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--green2);
+      margin-bottom: 2rem;
+    }
+    .evidence-item {
+      padding: 0 2rem;
+      border-right: 1px solid rgba(255,255,255,0.08);
+    }
+    .evidence-item:first-child { padding-left: 0; }
+    .evidence-item:last-child { border-right: none; }
+    .evidence-qualifier {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--green2);
+      margin-bottom: 0.6rem;
+    }
+    .evidence-figure {
+      font-family: var(--heading);
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1;
+      margin-bottom: 0.4rem;
+    }
+    .evidence-label { font-size: 0.85rem; color: rgba(255,255,255,0.55); line-height: 1.4; }
+
+    /* ── TRUST BAR ── */
+    .trust-bar {
+      background: var(--off-white);
+      border-bottom: 1px solid var(--border);
+      padding: 1.25rem 2rem;
+    }
+    .trust-bar-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .trust-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--gray2);
+      white-space: nowrap;
+    }
+    .trust-certs {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+    .trust-cert {
+      padding: 0.3rem 0.8rem;
+      background: var(--white);
+      border: 1px solid var(--border2);
+      border-radius: var(--r-full);
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--navy);
+    }
+
+    /* ── SECTIONS ── */
+    .section {
+      padding: 6rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .section-full {
+      padding: 6rem 2rem;
+    }
+    .section-full .section-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 0.85rem;
+    }
+    .section-label::before {
+      content: '';
+      display: block;
+      width: 24px; height: 2px;
+      background: var(--green);
+      flex-shrink: 0;
+    }
+
+    h2 {
+      font-family: var(--heading);
+      font-size: clamp(2.5rem, 5.5vw, 3.75rem);
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      color: var(--navy);
+      margin-bottom: 1rem;
+    }
+
+    .lead {
+      font-size: 1rem;
+      color: var(--gray);
+      max-width: 560px;
+      line-height: 1.75;
+      margin-bottom: 3rem;
+    }
+
+    .section-tagline {
+      font-family: var(--heading);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--green);
+      margin-bottom: 0.75rem;
+    }
+
+    /* ── PRODUCTS ── */
+    #products { border-top: 1px solid var(--border); padding: 3.5rem 2rem; }
+
+    .product-banner {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      margin-bottom: 3rem;
+      background-image: url('assets/product-video.gif');
+      background-size: cover;
+      background-position: center;
+    }
+    .product-banner-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: flex-end;
+      padding: 1.5rem 2rem;
+      background: linear-gradient(180deg, rgba(10,22,40,0) 35%, rgba(10,22,40,0.8) 100%);
+    }
+    .product-banner-overlay p {
+      margin: 0;
+      width: 100%;
+      font-family: var(--heading);
+      font-size: 0.8rem;
+      font-weight: 600;
+      line-height: 1.5;
+      color: var(--white);
+    }
+
+    .products-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, auto);
+      gap: 1rem;
+    }
+    .product-row {
+      display: grid;
+      grid-template-rows: subgrid;
+      grid-row: span 4;
+      gap: 0.75rem;
+      padding: 1.25rem 1.25rem;
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+    }
+    .product-row.featured {
+      background: var(--green-pale);
+      border-color: var(--green);
+    }
+    .product-tier {
+      display: inline-block;
+      padding: 0.2rem 0.55rem;
+      border-radius: var(--r-full);
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 0.35rem;
+    }
+    .tier-blue { background: var(--green-light); color: var(--green); }
+    .tier-navy { background: var(--navy); color: var(--white); }
+    .tier-gold { background: var(--navy); color: var(--green2); }
+    .product-model {
+      font-family: var(--heading);
+      font-size: 2.25rem;
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: -0.03em;
+      color: var(--navy);
+      margin-bottom: 0.15rem;
+    }
+    .product-vehicle {
+      font-size: 0.78rem;
+      color: var(--gray2);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+    .featured-badge {
+      display: inline-block;
+      background: var(--green);
+      color: var(--white);
+      font-size: 0.62rem;
+      font-weight: 800;
+      padding: 0.15rem 0.5rem;
+      border-radius: var(--r-full);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-top: 0.25rem;
+    }
+    .product-desc {
+      font-size: 0.8rem;
+      color: var(--gray);
+      line-height: 1.55;
+    }
+    .product-specs {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .spec-row {
+      display: flex;
+      flex-direction: column;
+      gap: 0.1rem;
+      padding: 0.3rem 0;
+      border-bottom: 1px solid var(--border2);
+    }
+    .spec-row:last-child { border-bottom: none; }
+    .spec-k {
+      color: var(--gray);
+      font-size: 0.68rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .spec-v { font-size: 0.88rem; font-weight: 600; color: var(--navy); }
+    .product-notes {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      font-size: 0.72rem;
+      color: var(--gray2);
+    }
+    .product-notes li {
+      position: relative;
+      padding-left: 0.9rem;
+    }
+    .product-notes li::before {
+      content: '\2013';
+      position: absolute;
+      left: 0;
+    }
+
+    /* ── ABOUT ── */
+    #about { background: var(--off-white); }
+    #about .section-full .section-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+    .about-text p {
+      color: var(--gray);
+      font-size: 0.95rem;
+      line-height: 1.8;
+      margin-bottom: 1.25rem;
+    }
+    .about-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      margin-top: 2.5rem;
+    }
+    .about-stat {
+      background: var(--white);
+      padding: 1.5rem;
+    }
+    .about-stat-value {
+      font-family: var(--heading);
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--green);
+      line-height: 1;
+      margin-bottom: 0.3rem;
+    }
+    .about-stat-label {
+      font-size: 0.78rem;
+      color: var(--gray);
+    }
+
+    .cert-panel {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      padding: 2rem;
+      box-shadow: var(--shadow-sm);
+    }
+    .cert-panel h3 {
+      font-family: var(--heading);
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 2px solid var(--green);
+      display: inline-block;
+    }
+    .flip-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1rem;
+    }
+    .flip-card {
+      height: 300px;
+      perspective: 1000px;
+      cursor: pointer;
+    }
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transition: transform 0.55s cubic-bezier(0.4,0,0.2,1);
+    }
+    .flip-card.flipped .flip-card-inner,
+    .flip-card.hovered .flip-card-inner { transform: rotateY(180deg); }
+    .flip-card-front,
+    .flip-card-back {
+      position: absolute;
+      inset: 0;
+      border-radius: var(--r);
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1.25rem;
+      text-align: center;
+    }
+    .flip-card-front {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-top: 3px solid var(--green);
+      gap: 0.75rem;
+    }
+    .flip-cert-logo {
+      flex-shrink: 0;
+      height: 110px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .flip-cert-logo img { max-width: 100%; max-height: 110px; object-fit: contain; }
+    .flip-cert-badge {
+      width: 60px; height: 60px;
+      background: var(--navy);
+      border-radius: var(--r-sm);
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--heading);
+      font-size: 0.5rem; font-weight: 800;
+      color: var(--white); line-height: 1.2; padding: 4px;
+    }
+    .flip-cert-name {
+      font-size: 0.72rem; font-weight: 600;
+      color: var(--navy); line-height: 1.3;
+    }
+    .flip-card-back {
+      background: var(--navy);
+      transform: rotateY(180deg);
+      align-items: flex-start;
+      text-align: left;
+      justify-content: flex-start;
+      gap: 0;
+      padding: 1rem;
+      overflow: hidden;
+    }
+    .flip-card-back-title {
+      font-family: var(--heading);
+      font-size: 0.9rem; font-weight: 700;
+      color: var(--white); margin-bottom: 0.3rem; line-height: 1.25;
+      flex-shrink: 0;
+    }
+    .flip-card-back-sub {
+      font-size: 0.62rem; color: var(--green2);
+      margin-bottom: 0.6rem; line-height: 1.4;
+      flex-shrink: 0;
+    }
+    .flip-card-back-detail {
+      font-size: 0.73rem;
+      color: rgba(255,255,255,0.82);
+      line-height: 1.6;
+      flex: 1;
+      min-height: 0;
+      overflow-y: auto;
+      overflow-x: hidden;
+      -webkit-overflow-scrolling: touch;
+      padding-right: 4px;
+    }
+    .flip-card-back-detail::-webkit-scrollbar { width: 3px; }
+    .flip-card-back-detail::-webkit-scrollbar-track { background: transparent; }
+    .flip-card-back-detail::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.3); border-radius: 2px; }
+    .contact-block {
+      margin-top: 1.5rem;
+      padding: 1.25rem;
+      background: var(--navy);
+      border-radius: var(--r-md);
+      color: rgba(255,255,255,0.7);
+      font-size: 0.82rem;
+      line-height: 1.7;
+    }
+    .contact-block strong { color: var(--white); display: block; margin-bottom: 0.5rem; }
+    .contact-block a { color: var(--green2); text-decoration: none; }
+
+    /* ── APPLICATIONS ── */
+    #applications { border-top: 1px solid var(--border); }
+
+    .apps-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+    .app-card {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      cursor: pointer;
+      border-radius: var(--r-lg);
+    }
+    .app-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--r-lg);
+      transition: transform 0.5s cubic-bezier(0.4,0,0.2,1), box-shadow 0.3s;
+      transform-style: preserve-3d;
+    }
+    .app-card:hover .app-card-inner {
+      box-shadow: var(--shadow-lg);
+    }
+    .app-card.flipped .app-card-inner,
+    .app-card.hovered .app-card-inner {
+      transform: rotateY(180deg);
+    }
+    .app-card:focus-visible {
+      outline: 2px solid var(--green);
+      outline-offset: 4px;
+      border-radius: var(--r-lg);
+    }
+    .app-card-front, .app-card-back {
+      position: absolute;
+      inset: 0;
+      backface-visibility: hidden;
+      border-radius: var(--r-lg);
+      overflow: hidden;
+    }
+    .app-card-front img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .app-card-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 1.25rem;
+      background: linear-gradient(180deg, rgba(10,22,40,0) 45%, rgba(10,22,40,0.85) 100%);
+    }
+    .app-card-num {
+      font-family: var(--heading);
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--green2);
+      margin-bottom: 0.3rem;
+    }
+    .app-card-name {
+      display: block;
+      font-family: var(--heading);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--white);
+    }
+    .app-card-back {
+      background: var(--off-white);
+      border: 1px solid var(--border);
+      transform: rotateY(180deg);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+    .app-card-back .app-card-num { color: var(--green); }
+    .app-card-back .app-card-name {
+      color: var(--navy);
+      margin: 0.3rem 0 0.6rem;
+    }
+    .app-card-desc {
+      font-size: 0.85rem;
+      color: var(--gray);
+      line-height: 1.6;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .app-card-inner { transition: none; }
+    }
+
+    /* ── BENEFITS ── */
+    #benefits { background: var(--navy); }
+    #benefits h2 { color: var(--white); }
+    #benefits .lead { color: rgba(255,255,255,0.55); }
+    #benefits .section-label { color: var(--green2); }
+    #benefits .section-label::before { background: var(--green2); }
+
+    .benefits-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 3rem;
+    }
+    .benefit-item {
+      padding: 1.75rem 0;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    .benefit-num {
+      font-family: var(--heading);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--green2);
+      margin-bottom: 0.6rem;
+      line-height: 1;
+    }
+    .benefit-title {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--white);
+      margin-bottom: 0.4rem;
+    }
+    .benefit-text {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.5);
+      line-height: 1.65;
+    }
+
+    /* ── COMPARISON ── */
+    #comparison { border-top: 1px solid var(--border); }
+
+    .table-wrap {
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+    table { width: 100%; border-collapse: collapse; }
+    thead tr { background: var(--navy); }
+    th {
+      padding: 1rem 1.25rem;
+      text-align: left;
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: rgba(255,255,255,0.6);
+    }
+    th:last-child { color: var(--green2); }
+    td {
+      padding: 0.85rem 1.25rem;
+      font-size: 0.85rem;
+      border-bottom: 1px solid var(--border);
+      color: var(--gray);
+    }
+    td:first-child { font-weight: 600; color: var(--navy); }
+    td:last-child { font-weight: 600; color: var(--green); }
+    tr:last-child td { border-bottom: none; }
+    tbody tr:hover td { background: var(--green-pale); }
+
+    /* ── WORLD TESTS ── */
+    #tests { background: var(--off-white); border-top: 1px solid var(--border); }
+
+    .map-card {
+      background: var(--navy);
+      border-radius: var(--r-lg);
+      padding: 2rem;
+      box-shadow: var(--shadow);
+      margin-bottom: 2rem;
+    }
+    .world-map { display: block; width: 100%; height: auto; border-radius: var(--r-lg); }
+    .flag {
+      width: 1.3em;
+      height: 0.975em;
+      display: inline-block;
+      vertical-align: -0.15em;
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+
+    /* ── FAQ ── */
+    #faq { border-top: 1px solid var(--border); }
+
+    .faq-cols {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+    .faq-sidebar h2 { margin-bottom: 0.75rem; }
+    .faq-sidebar p { font-size: 0.9rem; color: var(--gray); line-height: 1.7; margin-bottom: 1.5rem; }
+    .faq-contact-note {
+      margin-top: 2.5rem;
+      padding: 1.25rem;
+      background: var(--green-pale);
+      border: 1px solid rgba(0,105,72,0.15);
+      border-radius: var(--r-md);
+      font-size: 0.82rem;
+      color: var(--gray);
+      line-height: 1.65;
+    }
+    .faq-contact-note strong { color: var(--green); display: block; margin-bottom: 0.25rem; }
+
+    .faq-list { display: flex; flex-direction: column; }
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+      overflow: hidden;
+    }
+    .faq-question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.1rem 0;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--navy);
+      user-select: none;
+      gap: 1rem;
+    }
+    .faq-icon {
+      width: 22px; height: 22px;
+      border: 1.5px solid var(--border2);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.85rem;
+      color: var(--gray);
+      flex-shrink: 0;
+      transition: all 0.3s;
+    }
+    .faq-item.open .faq-icon {
+      background: var(--green);
+      border-color: var(--green);
+      color: var(--white);
+      transform: rotate(45deg);
+    }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s cubic-bezier(0.4,0,0.2,1);
+    }
+    .faq-item.open .faq-answer { max-height: 200px; }
+    .faq-answer-inner {
+      padding: 0 0 1.25rem;
+      font-size: 0.875rem;
+      color: var(--gray);
+      line-height: 1.75;
+    }
+
+    /* ── CONTACT ── */
+    #contact { background: var(--navy); }
+
+    .contact-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 520px;
+      gap: 5rem;
+      align-items: start;
+    }
+    .contact-info h2 { color: var(--white); margin-bottom: 1rem; }
+    .contact-info p { color: rgba(255,255,255,0.55); font-size: 0.95rem; line-height: 1.8; margin-bottom: 2rem; }
+    .contact-info .section-label { color: var(--green2); }
+    .contact-info .section-label::before { background: var(--green2); }
+
+    .contact-detail {
+      display: flex; align-items: flex-start; gap: 0.75rem;
+      margin-bottom: 1rem;
+      font-size: 0.875rem;
+    }
+    .contact-detail-icon {
+      width: 32px; height: 32px;
+      background: rgba(255,255,255,0.07);
+      border-radius: var(--r);
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--heading);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: var(--green2);
+      flex-shrink: 0;
+    }
+    .contact-detail-text { color: rgba(255,255,255,0.65); line-height: 1.5; }
+    .contact-detail-text strong { color: var(--white); display: block; }
+
+    .form-panel {
+      background: var(--white);
+      border-radius: var(--r-xl);
+      padding: 2.5rem;
+      box-shadow: var(--shadow-lg);
+    }
+    .form-panel h3 {
+      font-family: var(--heading);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 1.75rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .form-group {
+      display: flex; flex-direction: column; gap: 0.4rem;
+      margin-bottom: 1rem;
+    }
+    .form-group label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--gray);
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      background: var(--off-white);
+      border: 1px solid var(--border2);
+      border-radius: var(--r);
+      padding: 0.7rem 0.9rem;
+      font-family: var(--body);
+      font-size: 0.875rem;
+      color: var(--text);
+      outline: none;
+      transition: all 0.2s;
+      resize: none;
+    }
+    .form-group select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23535f74' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 0.9rem center; padding-right: 2.5rem; cursor: pointer; }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--hydro);
+      background: var(--white);
+      box-shadow: 0 0 0 3px rgba(30,95,212,0.12);
+    }
+    .form-group input::placeholder,
+    .form-group textarea::placeholder { color: var(--gray2); }
+    .form-submit { width: 100%; margin-top: 0.5rem; justify-content: center; font-size: 0.95rem; padding: 0.9rem; }
+    .series-options { display: flex; flex-direction: column; gap: 0.6rem; margin-top: 0.4rem; }
+    .series-option { display: flex; align-items: center; gap: 0.75rem; padding: 0.65rem 0.9rem; border: 1px solid var(--border2); border-radius: var(--r); cursor: pointer; transition: border-color 0.2s, background 0.2s; }
+    .series-option:hover { border-color: var(--hydro); background: rgba(30,95,212,0.04); }
+    .series-option input[type="checkbox"] { display: none; }
+    .series-option:has(input:checked) { border-color: var(--hydro); background: rgba(30,95,212,0.08); }
+    .series-badge { font-family: var(--heading); font-size: 0.85rem; font-weight: 800; color: var(--white); background: var(--navy); padding: 0.2rem 0.55rem; border-radius: var(--r-sm); flex-shrink: 0; }
+    .series-option:has(input:checked) .series-badge { background: var(--hydro); }
+    .series-label { font-size: 0.85rem; color: var(--gray); font-weight: 500; }
+    .form-success { display: none; text-align: center; padding: 2rem; }
+    .form-success.show { display: block; }
+    .form-fields.hide { display: none; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy);
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding: 2.5rem 2rem;
+    }
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .footer-brand strong {
+      font-family: var(--heading);
+      font-size: 0.95rem;
+      color: var(--white);
+      display: block;
+    }
+    .footer-brand span {
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.35);
+    }
+    .footer-links {
+      display: flex; gap: 1.5rem; list-style: none;
+    }
+    .footer-links a {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.4);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--white); }
+    .footer-copy { font-size: 0.72rem; color: rgba(255,255,255,0.3); }
+
+    /* ── REVEAL ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.7s cubic-bezier(0.4,0,0.2,1),
+                  transform 0.7s cubic-bezier(0.4,0,0.2,1);
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .topbar { display: none; }
+      .nav-links, .nav-cta { display: none; }
+      .hamburger { display: flex; }
+      .hero-inner { padding: 4rem 1.5rem; }
+      .evidence-inner { grid-template-columns: repeat(2, 1fr); gap: 2rem 0; padding: 2rem 1.5rem; }
+      .evidence-item { border-right: none; padding: 0; }
+      .evidence-item:nth-child(odd) { border-right: 1px solid rgba(255,255,255,0.08); padding-right: 1.5rem; }
+      .products-list { grid-template-columns: 1fr; }
+      .product-row { padding: 2rem 1.5rem; }
+      .product-banner-overlay p { font-size: 0.7rem; }
+      #about .section-full .section-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+      .benefits-list { grid-template-columns: 1fr; }
+      .faq-cols { grid-template-columns: 1fr; gap: 2rem; }
+      .flip-grid { grid-template-columns: repeat(3, 1fr); }
+      .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer-inner { flex-direction: column; text-align: center; }
+      .footer-links { justify-content: center; }
+      table { font-size: 0.78rem; }
+      th, td { padding: 0.65rem 0.75rem; }
+      .section { padding: 4rem 1.25rem; }
+      .section-full { padding: 4rem 1.25rem; }
+      .map-card { padding: 1.25rem; }
+    }
+    @media (max-width: 480px) {
+      .evidence-inner { grid-template-columns: 1fr; padding: 2rem 1.5rem; gap: 1.5rem; }
+      .evidence-item, .evidence-item:nth-child(odd) { border-right: none; padding: 0 0 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.08); }
+      .evidence-item:last-child { border-bottom: none; padding-bottom: 0; }
+      .apps-grid { grid-template-columns: 1fr; }
+      .flip-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+<svg aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
+  <defs>
+    <symbol id="flag-cn" viewBox="0 0 20 15">
+      <rect width="20" height="15" fill="#DE2910"/>
+      <polygon points="5,2.3 5.51,3.8 7.09,3.82 5.83,4.77 6.30,6.28 5,5.37 3.70,6.28 4.17,4.77 2.91,3.82 4.49,3.8" fill="#FFDE00"/>
+    </symbol>
+    <symbol id="flag-mm" viewBox="0 0 20 15">
+      <rect width="20" height="5" fill="#FECB00"/>
+      <rect width="20" height="5" y="5" fill="#34B233"/>
+      <rect width="20" height="5" y="10" fill="#EA2839"/>
+      <polygon points="10,5 10.58,6.70 12.38,6.73 10.94,7.81 11.47,9.52 10,8.49 8.53,9.52 9.06,7.81 7.62,6.73 9.42,6.70" fill="#FFFFFF"/>
+    </symbol>
+    <symbol id="flag-sg" viewBox="0 0 20 15">
+      <rect width="20" height="15" fill="#FFFFFF"/>
+      <rect width="20" height="7.5" fill="#EF3340"/>
+      <circle cx="5.5" cy="3.75" r="2.4" fill="#FFFFFF"/>
+      <circle cx="6.3" cy="3.75" r="2" fill="#EF3340"/>
+      <circle cx="9.3" cy="2.45" r="0.35" fill="#FFFFFF"/>
+      <circle cx="10.54" cy="3.35" r="0.35" fill="#FFFFFF"/>
+      <circle cx="10.06" cy="4.80" r="0.35" fill="#FFFFFF"/>
+      <circle cx="8.54" cy="4.80" r="0.35" fill="#FFFFFF"/>
+      <circle cx="8.06" cy="3.35" r="0.35" fill="#FFFFFF"/>
+    </symbol>
+    <symbol id="flag-in" viewBox="0 0 20 15">
+      <rect width="20" height="5" fill="#FF9933"/>
+      <rect width="20" height="5" y="5" fill="#FFFFFF"/>
+      <rect width="20" height="5" y="10" fill="#138808"/>
+      <circle cx="10" cy="7.5" r="1.8" fill="none" stroke="#000080" stroke-width="0.4"/>
+      <circle cx="10" cy="7.5" r="0.5" fill="#000080"/>
+    </symbol>
+    <symbol id="flag-gb" viewBox="0 0 20 15">
+      <rect width="20" height="15" fill="#012169"/>
+      <path d="M0,0 L20,15 M20,0 L0,15" stroke="#FFFFFF" stroke-width="3"/>
+      <path d="M0,0 L20,15 M20,0 L0,15" stroke="#C8102E" stroke-width="1"/>
+      <path d="M10,0 V15 M0,7.5 H20" stroke="#FFFFFF" stroke-width="5"/>
+      <path d="M10,0 V15 M0,7.5 H20" stroke="#C8102E" stroke-width="3"/>
+    </symbol>
+    <symbol id="flag-vn" viewBox="0 0 20 15">
+      <rect width="20" height="15" fill="#DA251D"/>
+      <polygon points="10,3.2 11,6.13 14.09,6.17 11.62,8.03 12.53,10.98 10,9.2 7.47,10.98 8.38,8.03 5.91,6.17 9,6.13" fill="#FFCD00"/>
+    </symbol>
+    <symbol id="flag-za" viewBox="0 0 20 15">
+      <rect width="20" height="15" fill="#007A4D"/>
+      <rect width="20" height="5" fill="#DE3831"/>
+      <rect y="10" width="20" height="5" fill="#0032A0"/>
+      <polygon points="0,0 9,7.5 0,15" fill="#1A1A1A"/>
+      <polygon points="0,1.5 6.8,7.5 0,13.5" fill="#FFB612"/>
+      <polygon points="0,3 4.5,7.5 0,12" fill="#007A4D"/>
+    </symbol>
+    <symbol id="flag-au" viewBox="0 0 20 15">
+      <rect width="20" height="15" fill="#00008B"/>
+      <rect x="0" y="3.35" width="10" height="0.8" fill="#FFFFFF"/>
+      <rect x="4.6" y="0" width="0.8" height="7.5" fill="#FFFFFF"/>
+      <rect x="0" y="3.55" width="10" height="0.4" fill="#CF142B"/>
+      <rect x="4.8" y="0" width="0.4" height="7.5" fill="#CF142B"/>
+      <circle cx="15" cy="4" r="0.9" fill="#FFFFFF"/>
+      <circle cx="13" cy="8" r="0.7" fill="#FFFFFF"/>
+      <circle cx="17" cy="8" r="0.7" fill="#FFFFFF"/>
+      <circle cx="15" cy="12" r="0.9" fill="#FFFFFF"/>
+      <circle cx="12" cy="6" r="0.5" fill="#FFFFFF"/>
+    </symbol>
+    <symbol id="flag-th" viewBox="0 0 20 15">
+      <rect width="20" height="15" fill="#A51931"/>
+      <rect y="2.5" width="20" height="2.5" fill="#F4F5F8"/>
+      <rect y="5" width="20" height="5" fill="#2D2A4A"/>
+      <rect y="10" width="20" height="2.5" fill="#F4F5F8"/>
+    </symbol>
+    <symbol id="flag-my" viewBox="0 0 20 15">
+      <rect width="20" height="15" fill="#FFFFFF"/>
+      <g fill="#CC0001">
+        <rect y="0" width="20" height="1.07"/>
+        <rect y="2.14" width="20" height="1.07"/>
+        <rect y="4.29" width="20" height="1.07"/>
+        <rect y="6.43" width="20" height="1.07"/>
+        <rect y="8.57" width="20" height="1.07"/>
+        <rect y="10.71" width="20" height="1.07"/>
+        <rect y="12.86" width="20" height="1.07"/>
+      </g>
+      <rect width="11" height="7.5" fill="#010066"/>
+      <circle cx="5.7" cy="3.75" r="2.6" fill="#FFCC00"/>
+      <circle cx="6.8" cy="3.75" r="2.6" fill="#010066"/>
+      <polygon points="8.5,2.15 8.87,3.24 10.02,3.26 9.10,3.95 9.44,5.05 8.5,4.38 7.56,5.05 7.90,3.95 6.98,3.26 8.13,3.24" fill="#FFCC00"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- MOBILE OVERLAY -->
+<div class="mobile-overlay" id="mobileMenu">
+  <a href="#home" onclick="closeMobile()">Home</a>
+  <a href="#products" onclick="closeMobile()">Products</a>
+  <a href="#applications" onclick="closeMobile()">Applications</a>
+  <a href="#faq" onclick="closeMobile()">FAQ</a>
+  <a href="#contact" onclick="closeMobile()">Contact</a>
+</div>
+
+
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">
+      <img class="nav-logo-mark" src="assets/sparxx-logo.png" alt="SparxX logo" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="#products">Products</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#applications">Applications</a></li>
+      <li><a href="#comparison">Compare</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Contact Us</a>
+    <button class="hamburger" id="hamburger" onclick="toggleMobile()">
+      <span id="h1"></span>
+      <span id="h2"></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-video-bg"><video autoplay muted loop playsinline><source src="assets/hero-video.webm" type="video/webm"></video></div>
+  <div class="hero-gradient"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-accent-line"></div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-tag"><div class="hero-tag-dot"></div>Hydrogen-on-Demand Technology</div>
+      <p class="hero-kicker">Drive your dollar further.</p>
+      <h1>Cleaner Combustion.<br/><em>Proven Results.</em></h1>
+      <p class="hero-sub">SparxX develops advanced hydrogen-on-demand systems that reduce fuel consumption, cut emissions, and deliver measurable ROI — without modifying your engine.</p>
+      <div class="hero-actions">
+        <a href="#products" class="btn-primary">View Products &rarr;</a>
+        <a href="#contact" class="btn-outline">Register Your Interest</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EVIDENCE BAR -->
+<div class="evidence-bar">
+  <div class="evidence-inner">
+    <div class="evidence-tagline">Pay Less · Go Further · Drive Cleaner</div>
+    <div class="evidence-item">
+      <div class="evidence-qualifier">Up to</div>
+      <div class="evidence-figure">&gt;45%</div>
+      <div class="evidence-label">Petrol fuel savings (40% diesel)</div>
+    </div>
+    <div class="evidence-item">
+      <div class="evidence-qualifier">Up to</div>
+      <div class="evidence-figure">&gt;70%</div>
+      <div class="evidence-label">Reduction in CO, CO₂ &amp; NOₓ</div>
+    </div>
+    <div class="evidence-item">
+      <div class="evidence-qualifier">Rated</div>
+      <div class="evidence-figure">10 yr</div>
+      <div class="evidence-label">Design lifespan, field proven since 2007</div>
+    </div>
+    <div class="evidence-item">
+      <div class="evidence-qualifier">Zero</div>
+      <div class="evidence-figure">0</div>
+      <div class="evidence-label">Engine modifications required to install</div>
+    </div>
+  </div>
+</div>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-bar-inner">
+    <span class="trust-label">Certified by</span>
+    <div class="trust-certs">
+      <span class="trust-cert">SIRIM</span>
+      <span class="trust-cert">JPJ</span>
+      <span class="trust-cert">DBKL</span>
+      <span class="trust-cert">MyHIJAU</span>
+      <span class="trust-cert">MINDEF / STRIDE</span>
+      <span class="trust-cert">Millbrook (UK)</span>
+    </div>
+  </div>
+</div>
+
+<!-- PRODUCTS -->
+<section id="products" class="section">
+  <div class="section-label">Product Line</div>
+  <h2>The Nucleus Series</h2>
+  <p class="section-tagline">Engineered for maximum mileage.</p>
+  <p class="lead">Three models designed to cover every vehicle class — from passenger cars to heavy-duty industrial fleets.</p>
+
+  <div class="product-banner reveal">
+    <div class="product-banner-overlay">
+      <p>The Nucleus unit — Aviation grade material housing. Retrofits to all existing and new internal combustion engines. No engine modification. Installed in under 2 hours.</p>
+    </div>
+  </div>
+
+  <div class="products-list reveal">
+    <div class="product-row">
+      <div>
+        <div class="product-tier tier-blue">Entry Level</div>
+        <div class="product-model">N1</div>
+        <div class="product-vehicle">Small Vehicles</div>
+      </div>
+      <p class="product-desc">Entry-level hydrolyzer for small vehicles. Introduces a precise hydrogen–oxygen mix into the intake system, improving mileage and reducing emissions without engine modification. Built with titanium electrodes.</p>
+      <div class="product-specs">
+        <div class="spec-row"><span class="spec-k">Target</span><span class="spec-v">Cars</span></div>
+        <div class="spec-row"><span class="spec-k">Build</span><span class="spec-v">Titanium</span></div>
+        <div class="spec-row"><span class="spec-k">Engine Displacement</span><span class="spec-v">650–2,500 cc</span></div>
+        <div class="spec-row"><span class="spec-k">Weight</span><span class="spec-v">4.5 kg</span></div>
+        <div class="spec-row"><span class="spec-k">Dimensions (W×D×H)</span><span class="spec-v">235 × 110 × 263 mm</span></div>
+      </div>
+      <ul class="product-notes">
+        <li>No modification needed</li>
+        <li>1 litre pure H₂O ≈ 10,000 km</li>
+        <li>Zero safety incidents on record</li>
+        <li>&gt;10-year design lifespan</li>
+        <li>Waterproof <strong>IP68</strong> compliance</li>
+      </ul>
+    </div>
+
+    <div class="product-row featured">
+      <div>
+        <div class="product-tier tier-navy">Mid Range</div>
+        <div class="product-model">N2</div>
+        <div class="product-vehicle">Mid-Sized &amp; Commercial</div>
+        <div class="featured-badge">Most Popular</div>
+      </div>
+      <p class="product-desc">Advanced electrolysis control for mid-sized vehicles, vans, and light commercial fleets. Optimises the hydrogen-oxygen production curve — increases power and torque while cutting fuel consumption. Platinum + Titanium cell assembly with tamper-proof circuitry.</p>
+      <div class="product-specs">
+        <div class="spec-row"><span class="spec-k">Target</span><span class="spec-v">Vans, Light Trucks</span></div>
+        <div class="spec-row"><span class="spec-k">Build</span><span class="spec-v">Platinum + Titanium</span></div>
+        <div class="spec-row"><span class="spec-k">Engine Displacement</span><span class="spec-v">2,501–6,500 cc</span></div>
+        <div class="spec-row"><span class="spec-k">Weight</span><span class="spec-v">6 kg</span></div>
+        <div class="spec-row"><span class="spec-k">Dimensions (W×D×H)</span><span class="spec-v">310 × 132 × 200 mm</span></div>
+      </div>
+      <ul class="product-notes">
+        <li>No modification needed</li>
+        <li>1 litre pure H₂O ≈ 10,000 km</li>
+        <li>Zero safety incidents on record</li>
+        <li>&gt;10-year design lifespan</li>
+        <li>Waterproof <strong>IP68</strong> compliance</li>
+      </ul>
+    </div>
+
+    <div class="product-row">
+      <div>
+        <div class="product-tier tier-gold">Flagship</div>
+        <div class="product-model">N3</div>
+        <div class="product-vehicle">Heavy-Duty &amp; High Performance</div>
+      </div>
+      <p class="product-desc">Flagship hydrolyzer for high-performance and heavy-duty vehicles. Precision-engineered electrodes and proprietary control algorithms deliver maximum combustion enhancement. Improves horsepower, reduces maintenance costs, and extends lubricant life.</p>
+      <div class="product-specs">
+        <div class="spec-row"><span class="spec-k">Target</span><span class="spec-v">Trucks, Buses, Luxury</span></div>
+        <div class="spec-row"><span class="spec-k">Build</span><span class="spec-v">Platinum + Titanium+</span></div>
+        <div class="spec-row"><span class="spec-k">Engine Displacement</span><span class="spec-v">6,501–12,000 cc</span></div>
+        <div class="spec-row"><span class="spec-k">Weight</span><span class="spec-v">8 kg</span></div>
+        <div class="spec-row"><span class="spec-k">Dimensions (W×D×H)</span><span class="spec-v">310 × 132 × 400 mm</span></div>
+      </div>
+      <ul class="product-notes">
+        <li>No modification needed</li>
+        <li>1 litre pure H₂O ≈ 10,000 km</li>
+        <li>Zero safety incidents on record</li>
+        <li>&gt;10-year design lifespan</li>
+        <li>Waterproof <strong>IP68</strong> compliance</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<div id="about" class="section-full">
+  <div class="section-inner">
+    <div class="about-text">
+      <div class="section-label">Our Company</div>
+      <h2>About SparxX Ltd</h2>
+      <p class="section-tagline">Enriching the present, the future, and beyond.</p>
+      <p><strong>SparxX Ltd</strong> is a deep-tech company developing, designing, manufacturing, and marketing the Nucleus system — a next-generation hydrogen-on-demand technology that converts internal combustion and diesel engines into cleaner, more efficient engines, offering a scalable answer to the global fuel crisis.</p>
+      <p>The Nucleus supplements fuel by increasing octane and cetane levels, enhancing the vehicle's ability to burn all injected fuel completely. It cuts emissions by up to 70% or more, reduces petrol consumption by up to 45% or more, and diesel by up to 40% or more.</p>
+      <p>R&D commenced in 2008. The team successfully harnessed hydrogen through electrolysis — splitting water into hydrogen and oxygen. The first prototype was ready in 2010, followed by upgraded new generation models and rigorous testing across multiple countries to ensure quality, performance and stable results.</p>
+      <div class="about-stats">
+        <div class="about-stat">
+          <div class="about-stat-value">2008</div>
+          <div class="about-stat-label">Year R&D began</div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-value">10</div>
+          <div class="about-stat-label">Countries deployed</div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-value">&gt;10yr</div>
+          <div class="about-stat-label">Product lifespan</div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-value">0</div>
+          <div class="about-stat-label">Safety incidents</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="cert-panel">
+        <h3>Certifications &amp; Approvals</h3>
+        <div class="flip-grid">
+          <div class="flip-card"><div class="flip-card-inner">
+            <div class="flip-card-front"><div class="flip-cert-logo"><img src="assets/certs/SIRIM.png" alt="SIRIM QAS logo"></div><div class="flip-cert-name">SIRIM</div></div>
+            <div class="flip-card-back"><div class="flip-card-back-title">SIRIM Certified</div><div class="flip-card-back-sub">Issued by SIRIM QAS International (2019)</div><div class="flip-card-back-detail">Malaysia's national standards body. The Nucleus Hydrolyzer has passed SIRIM's rigorous performance and safety testing protocols.</div></div>
+          </div></div>
+          <div class="flip-card"><div class="flip-card-inner">
+            <div class="flip-card-front"><div class="flip-cert-logo"><img src="assets/certs/STRIDE.png" alt="MINDEF STRIDE logo"></div><div class="flip-cert-name">MINDEF / STRIDE</div></div>
+            <div class="flip-card-back"><div class="flip-card-back-title">MINDEF/STRIDE Validated</div><div class="flip-card-back-sub">Issued by Science, Technology &amp; Innovation Division, Ministry of Defence Malaysia (2021)</div><div class="flip-card-back-detail">Independently tested at the STRIDE military test track. Results showed 38.4% fuel reduction on a standardized heavy truck road test.</div></div>
+          </div></div>
+          <div class="flip-card"><div class="flip-card-inner">
+            <div class="flip-card-front"><div class="flip-cert-logo"><img src="assets/certs/MyHIJAU.png" alt="MyHIJAU Mark logo"></div><div class="flip-cert-name">MyHIJAU Mark</div></div>
+            <div class="flip-card-back"><div class="flip-card-back-title">MyHIJAU Mark</div><div class="flip-card-back-sub">Issued by Green Technology and Climate Change Corporation (MGTC) (2020)</div><div class="flip-card-back-detail">Malaysia's official green technology recognition programme. Awarded for verified environmental benefits including substantial emissions reduction.</div></div>
+          </div></div>
+          <div class="flip-card"><div class="flip-card-inner">
+            <div class="flip-card-front"><div class="flip-cert-logo"><img src="assets/certs/Millbrook.jpg" alt="Millbrook logo"></div><div class="flip-cert-name">Millbrook (UK)</div></div>
+            <div class="flip-card-back"><div class="flip-card-back-title">Millbrook UK Tested</div><div class="flip-card-back-sub">Issued by Millbrook Proving Ground, United Kingdom (2022)</div><div class="flip-card-back-detail">Independent verification at one of Europe's most respected automotive test facilities. Confirmed 17% diesel savings.</div></div>
+          </div></div>
+          <div class="flip-card"><div class="flip-card-inner">
+            <div class="flip-card-front"><div class="flip-cert-logo"><img src="assets/certs/ASMA.png" alt="ASMA logo"></div><div class="flip-cert-name">ASMA</div></div>
+            <div class="flip-card-back"><div class="flip-card-back-title">ASMA Verified</div><div class="flip-card-back-sub">Issued by Alam Sekitar Malaysia Sdn Bhd (2022)</div><div class="flip-card-back-detail">Validated through comprehensive environmental monitoring protocols. Continuous emissions testing confirmed significant reduction in exhaust particulates, smoke opacity, and greenhouse gas contributions, meeting national ambient air quality benchmarks.</div></div>
+          </div></div>
+          <div class="flip-card"><div class="flip-card-inner">
+            <div class="flip-card-front"><div class="flip-cert-logo"><img src="assets/certs/DBKL.png" alt="DBKL logo"></div><div class="flip-cert-name">DBKL</div></div>
+            <div class="flip-card-back"><div class="flip-card-back-title">DBKL Acknowledged</div><div class="flip-card-back-sub">Issued by Dewan Bandaraya Kuala Lumpur (Kuala Lumpur City Hall) (2021)</div><div class="flip-card-back-detail">Formally recognized for alignment with the Kuala Lumpur Low Carbon Compact City Framework. The Nucleus Hydrolyzer supports municipal initiatives aimed at reducing urban air pollution and lowering carbon emissions from commercial fleets operating within the city center.</div></div>
+          </div></div>
+          <div class="flip-card"><div class="flip-card-inner">
+            <div class="flip-card-front"><div class="flip-cert-logo"><img src="assets/certs/JPJ.png" alt="JPJ logo"></div><div class="flip-cert-name">JPJ Approved</div></div>
+            <div class="flip-card-back"><div class="flip-card-back-title">JPJ Approved</div><div class="flip-card-back-sub">Issued by Jabatan Pengangkutan Jalan (Road Transport Department) (2019)</div><div class="flip-card-back-detail">Road-legal approval from Malaysia's Road Transport Department. Hydrolyzer has been approved and can be legally fitted to all road-registered vehicles.</div></div>
+          </div></div>
+          <div class="flip-card"><div class="flip-card-inner">
+            <div class="flip-card-front"><div class="flip-cert-logo"><img src="assets/certs/iso5130.png" alt="ISO 5130 logo"></div><div class="flip-cert-name">ISO 5130 Compliant</div></div>
+            <div class="flip-card-back"><div class="flip-card-back-title">ISO 5130 Compliant</div><div class="flip-card-back-sub">Issued by International Organization for Standardization (2020)</div><div class="flip-card-back-detail">Compliant with ISO 5130 acoustics standard for stationary road vehicle sound measurement. No abnormal acoustic emissions.</div></div>
+          </div></div>
+          <div class="flip-card"><div class="flip-card-inner">
+            <div class="flip-card-front"><div class="flip-cert-logo"><img src="assets/certs/MyIPO.jpg" alt="MyIPO logo"></div><div class="flip-cert-name">MYIPO</div></div>
+            <div class="flip-card-back"><div class="flip-card-back-title">MyIPO Patent</div><div class="flip-card-back-sub">Issued by Intellectual Property Corporation of Malaysia (2018)</div><div class="flip-card-back-detail">Registered patent MY-169663-A protecting the Nucleus Hydrolyzer's core hydrogen electrolysis and delivery mechanism.</div></div>
+          </div></div>
+          <div class="flip-card"><div class="flip-card-inner">
+            <div class="flip-card-front"><div class="flip-cert-logo"><img src="assets/certs/tn50.png" alt="TN50 logo"></div><div class="flip-cert-name">TN50 Initiative</div></div>
+            <div class="flip-card-back"><div class="flip-card-back-title">TN50 Initiative</div><div class="flip-card-back-sub">Issued by Malaysian Government Transformasi Nasional 2050 (2019)</div><div class="flip-card-back-detail">Endorsed as a technology contributing to Malaysia's long-term national transformation goals including energy security and decarbonisation.</div></div>
+          </div></div>
+        </div>
+        <div class="contact-block">
+          <strong>SparxX Ltd</strong>
+          30-2, Jalan Metro Pudu, Fraser Business Park,<br/>
+          Off Jalan Yew, 55100 Kuala Lumpur.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- APPLICATIONS -->
+<section id="applications" class="section">
+  <div class="section-label">Use Cases</div>
+  <h2>Industry Applications</h2>
+  <p class="lead">Any sector operating internal combustion engines benefits from the Nucleus — from logistics to maritime.</p>
+
+  <div class="apps-grid reveal">
+    <div class="app-card" tabindex="0" role="button" aria-pressed="false" onclick="toggleAppCard(this)" onkeydown="appCardKey(event,this)">
+      <div class="app-card-inner">
+        <div class="app-card-front">
+          <img src="assets/applications/logistics-fleet.jpg" alt="Logistics fleet truck on the highway" loading="lazy">
+          <div class="app-card-overlay"><span class="app-card-num">01</span><span class="app-card-name">Logistics Fleet</span></div>
+        </div>
+        <div class="app-card-back">
+          <span class="app-card-num">01</span><span class="app-card-name">Logistics Fleet</span>
+          <p class="app-card-desc">Reduce operational fuel costs and emissions for trucks, buses, and delivery vehicles in high-mileage environments.</p>
+        </div>
+      </div>
+    </div>
+    <div class="app-card" tabindex="0" role="button" aria-pressed="false" onclick="toggleAppCard(this)" onkeydown="appCardKey(event,this)">
+      <div class="app-card-inner">
+        <div class="app-card-front">
+          <img src="assets/applications/construction-fleet.jpg" alt="Construction fleet excavator on site" loading="lazy">
+          <div class="app-card-overlay"><span class="app-card-num">02</span><span class="app-card-name">Construction Fleet</span></div>
+        </div>
+        <div class="app-card-back">
+          <span class="app-card-num">02</span><span class="app-card-name">Construction Fleet</span>
+          <p class="app-card-desc">Enhances combustion efficiency in excavators, cranes, and mixers. Reduces soot buildup and overheating.</p>
+        </div>
+      </div>
+    </div>
+    <div class="app-card" tabindex="0" role="button" aria-pressed="false" onclick="toggleAppCard(this)" onkeydown="appCardKey(event,this)">
+      <div class="app-card-inner">
+        <div class="app-card-front">
+          <img src="assets/applications/agriculture-fleet.jpg" alt="Agricultural tractor in a field" loading="lazy">
+          <div class="app-card-overlay"><span class="app-card-num">03</span><span class="app-card-name">Agriculture</span></div>
+        </div>
+        <div class="app-card-back">
+          <span class="app-card-num">03</span><span class="app-card-name">Agriculture</span>
+          <p class="app-card-desc">Optimises combustion in tractors and harvesters. Low-maintenance and durable for rural environments.</p>
+        </div>
+      </div>
+    </div>
+    <div class="app-card" tabindex="0" role="button" aria-pressed="false" onclick="toggleAppCard(this)" onkeydown="appCardKey(event,this)">
+      <div class="app-card-inner">
+        <div class="app-card-front">
+          <img src="assets/applications/public-transport.jpg" alt="Public transport bus" loading="lazy">
+          <div class="app-card-overlay"><span class="app-card-num">04</span><span class="app-card-name">Public Transport</span></div>
+        </div>
+        <div class="app-card-back">
+          <span class="app-card-num">04</span><span class="app-card-name">Public Transport</span>
+          <p class="app-card-desc">Improves low-RPM combustion ideal for stop-and-go traffic. Visibly reduces urban black-smoke emissions.</p>
+        </div>
+      </div>
+    </div>
+    <div class="app-card" tabindex="0" role="button" aria-pressed="false" onclick="toggleAppCard(this)" onkeydown="appCardKey(event,this)">
+      <div class="app-card-inner">
+        <div class="app-card-front">
+          <img src="assets/applications/government-fleet.jpg" alt="Government fleet vehicle" loading="lazy">
+          <div class="app-card-overlay"><span class="app-card-num">05</span><span class="app-card-name">Government Fleet</span></div>
+        </div>
+        <div class="app-card-back">
+          <span class="app-card-num">05</span><span class="app-card-name">Government Fleet</span>
+          <p class="app-card-desc">Supports national green-fleet initiatives. Quick, low-risk deployment with no engine modifications.</p>
+        </div>
+      </div>
+    </div>
+    <div class="app-card" tabindex="0" role="button" aria-pressed="false" onclick="toggleAppCard(this)" onkeydown="appCardKey(event,this)">
+      <div class="app-card-inner">
+        <div class="app-card-front">
+          <img src="assets/applications/passenger-cars.jpg" alt="Passenger car on the road" loading="lazy">
+          <div class="app-card-overlay"><span class="app-card-num">06</span><span class="app-card-name">Passenger Cars</span></div>
+        </div>
+        <div class="app-card-back">
+          <span class="app-card-num">06</span><span class="app-card-name">Passenger Cars</span>
+          <p class="app-card-desc">Improves mileage and reduces engine temperature for everyday drivers. No structural engine changes.</p>
+        </div>
+      </div>
+    </div>
+    <div class="app-card" tabindex="0" role="button" aria-pressed="false" onclick="toggleAppCard(this)" onkeydown="appCardKey(event,this)">
+      <div class="app-card-inner">
+        <div class="app-card-front">
+          <img src="assets/applications/power-generator.jpg" alt="Industrial power generator" loading="lazy">
+          <div class="app-card-overlay"><span class="app-card-num">07</span><span class="app-card-name">Power Generators</span></div>
+        </div>
+        <div class="app-card-back">
+          <span class="app-card-num">07</span><span class="app-card-name">Power Generators</span>
+          <p class="app-card-desc">Plug-and-play for stationary power, marine, and offshore installations. Prevents turbine fouling.</p>
+        </div>
+      </div>
+    </div>
+    <div class="app-card" tabindex="0" role="button" aria-pressed="false" onclick="toggleAppCard(this)" onkeydown="appCardKey(event,this)">
+      <div class="app-card-inner">
+        <div class="app-card-front">
+          <img src="assets/applications/maritime-fleet.jpg" alt="Maritime vessel at sea" loading="lazy">
+          <div class="app-card-overlay"><span class="app-card-num">08</span><span class="app-card-name">Maritime Fleet</span></div>
+        </div>
+        <div class="app-card-back">
+          <span class="app-card-num">08</span><span class="app-card-name">Maritime Fleet</span>
+          <p class="app-card-desc">Integrates with marine diesel engines. Aligns with IMO decarbonization targets.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<div id="benefits" class="section-full" style="background:var(--navy);">
+  <div class="section-inner" style="max-width:1200px;margin:0 auto;">
+    <div class="section-label" style="color:var(--green2)"><span style="background:var(--green2);width:24px;height:2px;display:inline-block;margin-right:0.6rem;vertical-align:middle;flex-shrink:0;"></span>Key Benefits</div>
+    <h2 style="color:var(--white);margin-bottom:0.75rem;">Why Nucleus?</h2>
+    <p class="lead" style="color:rgba(255,255,255,0.5);margin-bottom:3rem;">Six measurable advantages that deliver immediate and long-term value.</p>
+    <div class="benefits-list reveal">
+      <div class="benefit-item"><div class="benefit-num">&gt;45%</div><div class="benefit-title">Fuel Savings</div><div class="benefit-text">Up to &gt;45% savings on petrol, up to &gt;40% on diesel. Rapid ROI without costly engine conversion or vehicle replacement.</div></div>
+      <div class="benefit-item"><div class="benefit-num">+Range</div><div class="benefit-title">Extended Range</div><div class="benefit-text">Enhanced combustion efficiency extends mileage per tank, reducing refueling stops and operational downtime.</div></div>
+      <div class="benefit-item"><div class="benefit-num">+Power</div><div class="benefit-title">Improved Performance</div><div class="benefit-text">Hydrogen-enriched air improves torque, throttle response, and acceleration without compromising durability.</div></div>
+      <div class="benefit-item"><div class="benefit-num">&gt;70%</div><div class="benefit-title">Emission Reduction</div><div class="benefit-text">Near-complete combustion lowers CO, CO₂, and NOₓ by up to &gt;70%. Immediate, practical route to ESG compliance.</div></div>
+      <div class="benefit-item"><div class="benefit-num">−Temp</div><div class="benefit-title">Cooler Engine</div><div class="benefit-text">Lower operating temperatures reduce wear on pistons and valves, prolonging lubricant life and engine longevity.</div></div>
+      <div class="benefit-item"><div class="benefit-num">−Cost</div><div class="benefit-title">Lower Maintenance</div><div class="benefit-text">Cleaner burn means fewer deposits and slower component wear. Extended oil change intervals reduce total cost of ownership.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- COMPARISON -->
+<section id="comparison" class="section">
+  <div class="section-label">Technology Analysis</div>
+  <h2>Competitive Comparison</h2>
+  <p class="lead">How the Nucleus stacks up against NGV and Hybrid alternatives across the metrics that matter most.</p>
+
+  <div class="table-wrap reveal">
+    <table>
+      <thead>
+        <tr>
+          <th>Parameter</th>
+          <th>NGV</th>
+          <th>Hybrid</th>
+          <th>Nucleus ✓</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Engine Type</td><td>Gas + Petrol</td><td>Electric + Petrol</td><td>Hydrogen + Petrol</td></tr>
+        <tr><td>Mileage Savings</td><td>Up to 40% Max</td><td>Up to 30% Max</td><td>Up to &gt;45%</td></tr>
+        <tr><td>Maintenance Interval</td><td>Every 5,000 km</td><td>Every 5,000 km</td><td>Every 10,000 km</td></tr>
+        <tr><td>Maintenance Cost</td><td>High</td><td>High</td><td>Low</td></tr>
+        <tr><td>Engine Temperature</td><td>High</td><td>High</td><td>Low</td></tr>
+        <tr><td>System Lifespan</td><td>5 years</td><td>8 years</td><td>&gt;10 years</td></tr>
+        <tr><td>Power Torque</td><td>Reduced 3%</td><td>Reduced 3%</td><td>Increased 3%</td></tr>
+        <tr><td>Space Requirement</td><td>Large</td><td>Normal</td><td>Compact</td></tr>
+        <tr><td>Environmental Impact</td><td>Non-recyclable</td><td>Battery waste</td><td>Recyclable</td></tr>
+        <tr><td>Emission Reduction</td><td>30%</td><td>15%</td><td>&gt;70%</td></tr>
+        <tr><td>Engine Modification</td><td>Yes</td><td>No</td><td>No</td></tr>
+        <tr><td>Explosion Risk</td><td>High</td><td>High</td><td>None</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- WORLD TESTS -->
+<div id="tests" class="section-full" style="background:var(--off-white);border-top:1px solid var(--border);">
+  <div class="section-inner" style="max-width:1200px;margin:0 auto;">
+    <div class="section-label">Field Evidence</div>
+    <h2>Tested Worldwide</h2>
+    <p class="lead">Independent field tests conducted across Asia, Europe, and beyond — with documented, verifiable results.</p>
+
+    <div class="map-card reveal">
+      <img class="world-map" src="assets/world-map-data.png" alt="World map marking countries where Nucleus field tests were conducted, with fuel-saving results for Malaysia, China, Myanmar, Singapore, India, Vietnam, United Kingdom, South Africa, Australia, and Thailand">
+    </div>
+
+    <div class="table-wrap reveal">
+      <table>
+        <thead>
+          <tr><th>Location</th><th>Engine</th><th>Test Type</th><th>Fuel Saving / Emissions</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><svg class="flag" aria-hidden="true"><use href="#flag-cn"/></svg> Fuzhou, China</td><td>Petrol</td><td>Fleet Test</td><td>35.3%</td></tr>
+          <tr><td><svg class="flag" aria-hidden="true"><use href="#flag-mm"/></svg> Myanmar</td><td>Petrol</td><td>Fleet Test</td><td>57.62%</td></tr>
+          <tr><td><svg class="flag" aria-hidden="true"><use href="#flag-sg"/></svg> Singapore</td><td>Diesel</td><td>Fleet Test</td><td>21.96%</td></tr>
+          <tr><td><svg class="flag" aria-hidden="true"><use href="#flag-in"/></svg> Kolkata, India</td><td>Petrol</td><td>Fleet Test</td><td>58.9%</td></tr>
+          <tr><td><svg class="flag" aria-hidden="true"><use href="#flag-gb"/></svg> Northampton, UK</td><td>Diesel</td><td>Fleet Test</td><td>22.45%</td></tr>
+          <tr><td><svg class="flag" aria-hidden="true"><use href="#flag-vn"/></svg> Vietnam</td><td>Petrol</td><td>Fleet Test</td><td>31.71%</td></tr>
+          <tr><td><svg class="flag" aria-hidden="true"><use href="#flag-my"/></svg> STRIDE (Phase 1)</td><td>Diesel</td><td>Fleet Test</td><td>29.6%</td></tr>
+          <tr><td><svg class="flag" aria-hidden="true"><use href="#flag-my"/></svg> STRIDE (Phase 2)</td><td>Petrol</td><td>Fleet Test</td><td>23.93%</td></tr>
+          <tr><td><svg class="flag" aria-hidden="true"><use href="#flag-my"/></svg> Rawang, Malaysia</td><td>Diesel</td><td>Fleet Test</td><td>38.89%</td></tr>
+          <tr><td><svg class="flag" aria-hidden="true"><use href="#flag-my"/></svg> DBKL</td><td>Petrol</td><td>Municipal Fleet</td><td>42.85%</td></tr>
+          <tr><td><svg class="flag" aria-hidden="true"><use href="#flag-my"/></svg> DBKL</td><td>Diesel</td><td>Municipal Fleet</td><td>31.74%</td></tr>
+          <tr><td><svg class="flag" aria-hidden="true"><use href="#flag-my"/></svg> DBKL</td><td>Diesel</td><td>Municipal Fleet</td><td>30.47%</td></tr>
+          <tr><td><svg class="flag" aria-hidden="true"><use href="#flag-my"/></svg> DBKL</td><td>Diesel</td><td>Municipal Fleet</td><td>21.04%</td></tr>
+          <tr><td><svg class="flag" aria-hidden="true"><use href="#flag-my"/></svg> KTMD</td><td>Diesel</td><td>Fleet Test</td><td>27.37%</td></tr>
+          <tr><td><svg class="flag" aria-hidden="true"><use href="#flag-cn"/></svg> China</td><td>Diesel</td><td>Generator</td><td>22.27%</td></tr>
+          <tr><td><svg class="flag" aria-hidden="true"><use href="#flag-my"/></svg> FELDA Pahang</td><td>Diesel</td><td>Water Pump</td><td>21.35%</td></tr>
+          <tr><td><svg class="flag" aria-hidden="true"><use href="#flag-my"/></svg> ASMA</td><td>Diesel</td><td>Emissions Test</td><td>CO ↓49ppm · CO₂ ↓0.5% · SOx/NOx ↓</td></tr>
+          <tr><td><svg class="flag" aria-hidden="true"><use href="#flag-my"/></svg> ASMA</td><td>Petrol</td><td>Emissions Test</td><td>CO ↓258ppm · CO₂ ↓0.06% · SOx/NOx ↓</td></tr>
+          <tr><td><svg class="flag" aria-hidden="true"><use href="#flag-za"/></svg> South Africa</td><td>Diesel</td><td>Fleet Test</td><td>35.54%</td></tr>
+          <tr><td><svg class="flag" aria-hidden="true"><use href="#flag-au"/></svg> Australia</td><td>Diesel</td><td>Fleet Test</td><td>32%</td></tr>
+          <tr><td><svg class="flag" aria-hidden="true"><use href="#flag-th"/></svg> Thailand</td><td>Diesel</td><td>Fleet Test</td><td>27.30%</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- N3 BANNER -->
+<div style="width:100%;background:var(--navy);line-height:0;">
+  <img src="assets/n3-banner.png" alt="Nucleus N3 Heavy-Duty Hydrolyzer" style="width:100%;height:auto;display:block;">
+</div>
+
+<!-- FAQ -->
+<section id="faq" class="section">
+  <div class="section-label">FAQ</div>
+  <h2>Common Questions</h2>
+  <p class="lead">Everything you need to know about the Nucleus technology, installation, and performance.</p>
+  <div class="faq-list reveal">
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">How does the Nucleus work?<span class="faq-icon">+</span></div><div class="faq-answer"><div class="faq-answer-inner">The Nucleus uses electrolysis to split water into Hydrogen and Oxygen. These gases are introduced into the intake system, improving combustion efficiency and reducing emissions — without modifying the engine.</div></div></div>
+<div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Can it work on any engine?<span class="faq-icon">+</span></div><div class="faq-answer"><div class="faq-answer-inner">Yes. The Nucleus works on both petrol and diesel internal combustion engine, old or new. Any sector using an internal combustion engine is suitable.</div></div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Does it require engine modification?<span class="faq-icon">+</span></div><div class="faq-answer"><div class="faq-answer-inner">No modification is required. Only one 8mm insertion is made at the air filter. JPJ blanket approval is acquired for installation in all types of vehicle throughout the country.</div></div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">How much fuel can I save?<span class="faq-icon">+</span></div><div class="faq-answer"><div class="faq-answer-inner">The Nucleus can improve your km/l mileage significantly. Typical results show up to 45% or more savings for petrol engines and up to 40% or more for diesel engines.</div></div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Will fuel savings decrease over time?<span class="faq-icon">+</span></div><div class="faq-answer"><div class="faq-answer-inner">No, as long as the Nucleus and the engine receive their scheduled maintenance. Savings only drop if the unit is neglected or the engine itself is already running poorly.</div></div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">What's a baseline test, and how is it conducted?<span class="faq-icon">+</span></div><div class="faq-answer"><div class="faq-answer-inner">A baseline test records the vehicle's fuel performance before installation, using GPS fuel monitoring, or a digital flow meter. This is what verifies the savings figures.</div></div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Why is fuel testing conducted on the highway?<span class="faq-icon">+</span></div><div class="faq-answer"><div class="faq-answer-inner">Highway driving holds a constant speed in a controlled environment, giving the most accurate before-and-after comparison.</div></div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Why do I see less fuel savings in the city?<span class="faq-icon">+</span></div><div class="faq-answer"><div class="faq-answer-inner">Traffic, idling, and lower oxygen levels reduce efficiency in stop-start driving. The percentage saving stays consistent, but the absolute figure looks smaller in city conditions.</div></div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">How does it reduce emissions?<span class="faq-icon">+</span></div><div class="faq-answer"><div class="faq-answer-inner">Hydrogen and oxygen improve combustion completeness, cutting CO, CO₂, and NOₓ. The only byproduct of the H2/O2 reaction itself is water.</div></div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">How does it lower engine temperature?<span class="faq-icon">+</span></div><div class="faq-answer"><div class="faq-answer-inner">The oxygen produced converts back to water during combustion, drawing heat out of the cylinder. Lower running temperatures reduce the overheating that causes most breakdowns.</div></div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Does it extend oil-change intervals?<span class="faq-icon">+</span></div><div class="faq-answer"><div class="faq-answer-inner">Yes. Cleaner combustion leaves fewer carbon deposits, slowing oil degradation and component wear, which extends service intervals.</div></div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">How much water does it consume?<span class="faq-icon">+</span></div><div class="faq-answer"><div class="faq-answer-inner">Very little — one litre of water lasts approximately 10,000 km.</div></div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Can NUCLEUS use tap water?<span class="faq-icon">+</span></div><div class="faq-answer"><div class="faq-answer-inner">No, currently only RO and distilled water is recommended for Nucleus.</div></div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">What happens if you don't top up the water?<span class="faq-icon">+</span></div><div class="faq-answer"><div class="faq-answer-inner">The Nucleus can malfunction if not maintained properly. Regular topping up optimises Nucleus performance.</div></div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Will it drain the vehicle battery?<span class="faq-icon">+</span></div><div class="faq-answer"><div class="faq-answer-inner">No. The Nucleus requires only about 5 amps of current. The alternator continuously charges the battery and can produce up to 120 amps, so the draw is negligible.</div></div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">What is the lifespan of Nucleus?<span class="faq-icon">+</span></div><div class="faq-answer"><div class="faq-answer-inner">The Nucleus is designed for a 10-year lifespan. Periodic maintenance every 6 months is recommended for longer lifespan.</div></div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Is it safe?<span class="faq-icon">+</span></div><div class="faq-answer"><div class="faq-answer-inner">Yes. Hydrogen is produced on-demand in tiny quantities and is never stored under pressure.</div></div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">If NUCLEUS malfunctions, is it safe to operate?<span class="faq-icon">+</span></div><div class="faq-answer"><div class="faq-answer-inner">Yes. It's safe to keep driving, though we recommend shutting down the unit via its kill switch until it's serviced.</div></div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Will a malfunction shutdown affect my fuel savings?<span class="faq-icon">+</span></div><div class="faq-answer"><div class="faq-answer-inner">Not immediately. Carbon deposits take time to build back up in a clean engine, so savings hold for a while after shutdown.</div></div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">What can go wrong with the NUCLEUS?<span class="faq-icon">+</span></div><div class="faq-answer"><div class="faq-answer-inner">Nucleus only needs regular maintenance to keep performing.</div></div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Is it safe to operate the engine if NUCLEUS is faulty?<span class="faq-icon">+</span></div><div class="faq-answer"><div class="faq-answer-inner">Yes. The engine runs normally regardless of the Nucleus's condition.</div></div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Can NUCLEUS cause any harm to the engine?<span class="faq-icon">+</span></div><div class="faq-answer"><div class="faq-answer-inner">No. As it requires no engine modification.</div></div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">What happens if NUCLEUS keeps running while faulty?<span class="faq-icon">+</span></div><div class="faq-answer"><div class="faq-answer-inner">Some Nucleus components may be damaged, but the engine itself stays unaffected.</div></div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">What's the turnaround time for a NUCLEUS repair?<span class="faq-icon">+</span></div><div class="faq-answer"><div class="faq-answer-inner">About two weeks.</div></div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Is the Nucleus patented?<span class="faq-icon">+</span></div><div class="faq-answer"><div class="faq-answer-inner">Yes. The Nucleus is a patented technology.</div></div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">What certifications does it hold?<span class="faq-icon">+</span></div><div class="faq-answer"><div class="faq-answer-inner">Certified by SIRIM, Alam Sekitar, MINDEF/STRIDE, DBKL, MyHijau, JPJ, Millbrook (UK), and MYIPO.</div></div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">What is the maintenance cycle?<span class="faq-icon">+</span></div><div class="faq-answer"><div class="faq-answer-inner">A periodic maintenance cycle of 6 months is required. Servicing takes approximately 1 hour and must be performed by a trained technician. The engine can remain operational during maintenance.</div></div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">If NUCLEUS is this good, why isn't everyone using it?<span class="faq-icon">+</span></div><div class="faq-answer"><div class="faq-answer-inner">New technology takes time to displace entrenched habits or public adoption. Adoption is accelerating as field results and certifications build a track record.</div></div></div>
+  </div>
+  <div class="faq-contact-note">
+    <strong>Still have questions?</strong>
+    Reach our technical team using the contact form below.
+  </div>
+</section>
+
+<!-- CONTACT -->
+<div id="contact" class="section-full" style="background:var(--navy);padding:6rem 2rem;">
+  <div class="contact-grid">
+    <div class="contact-info">
+      <img src="assets/sparxx-logo-light.png" alt="SparxX" style="width:180px;height:auto;display:block;margin-bottom:1.5rem;" />
+      <div class="section-label" style="color:var(--green2)"><span style="background:var(--green2);width:24px;height:2px;display:inline-block;margin-right:0.6rem;vertical-align:middle;"></span>Register Interest</div>
+      <h2>Interested in the Nucleus?</h2>
+      <p>Whether you're evaluating for a single vehicle or a large fleet, register your interest and our team will be in touch with the right Nucleus solution for you.</p>
+      <div class="contact-detail">
+        <div class="contact-detail-icon">HQ</div>
+        <div class="contact-detail-text"><strong>Kuala Lumpur Office</strong>30-2, Jalan Metro Pudu, Fraser Business Park, Off Jalan Yew, 55100 KL.</div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-detail-icon">Co.</div>
+        <div class="contact-detail-text"><strong>SparxX Ltd</strong></div>
+      </div>
+    </div>
+    <div class="form-panel">
+      <h3>Register Your Interest</h3>
+      <div class="form-fields" id="formFields">
+        <div class="form-row">
+          <div class="form-group"><label>First Name *</label><input id="f-firstName" type="text" placeholder="Ahmad" /></div>
+          <div class="form-group"><label>Last Name *</label><input id="f-lastName" type="text" placeholder="Rahman" /></div>
+        </div>
+        <div class="form-group"><label>Email *</label><input id="f-email" type="email" placeholder="ahmad@company.com" /></div>
+        <div class="form-group"><label>Phone</label><input id="f-phone" type="tel" placeholder="+60 12-345 6789" /></div>
+        <div class="form-row">
+          <div class="form-group"><label>Company</label><input id="f-company" type="text" placeholder="Your company name" /></div>
+          <div class="form-group">
+            <label>Country *</label>
+            <select id="f-country">
+              <option value="">Select country…</option>
+              <option value="Malaysia">Malaysia</option>
+              <option value="Singapore">Singapore</option>
+              <option value="Indonesia">Indonesia</option>
+              <option value="Thailand">Thailand</option>
+              <option value="Vietnam">Vietnam</option>
+              <option value="Philippines">Philippines</option>
+              <option value="Myanmar">Myanmar</option>
+              <option value="Cambodia">Cambodia</option>
+              <option value="Brunei">Brunei</option>
+              <option value="China">China</option>
+              <option value="India">India</option>
+              <option value="Japan">Japan</option>
+              <option value="South Korea">South Korea</option>
+              <option value="Australia">Australia</option>
+              <option value="New Zealand">New Zealand</option>
+              <option value="United Kingdom">United Kingdom</option>
+              <option value="United States">United States</option>
+              <option value="Canada">Canada</option>
+              <option value="UAE">UAE</option>
+              <option value="Saudi Arabia">Saudi Arabia</option>
+              <option value="South Africa">South Africa</option>
+              <option value="Nigeria">Nigeria</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Nucleus Model *</label>
+          <div class="series-options">
+            <label class="series-option"><input type="checkbox" name="series" value="N1" /><span class="series-badge">N1</span><span class="series-label">Small Vehicles (650–2,500 cc)</span></label>
+            <label class="series-option"><input type="checkbox" name="series" value="N2" /><span class="series-badge">N2</span><span class="series-label">Mid-Sized &amp; Commercial (2,501–6,500 cc)</span></label>
+            <label class="series-option"><input type="checkbox" name="series" value="N3" /><span class="series-badge">N3</span><span class="series-label">Heavy-Duty &amp; High Performance (&gt;6,500 cc)</span></label>
+          </div>
+        </div>
+        <div class="form-group"><label>Additional Notes</label><textarea id="f-notes" rows="3" placeholder="Fleet size, vehicle types, or anything else you'd like us to know..."></textarea></div>
+        <div id="f-error" style="color:#e53e3e;font-size:0.82rem;display:none;margin-bottom:0.5rem;"></div>
+        <button class="btn-primary form-submit" id="f-submit" onclick="submitForm()">Register Interest &rarr;</button>
+      </div>
+      <div class="form-success" id="formSuccess">
+        <div style="font-size:2.5rem;margin-bottom:1rem;">✓</div>
+        <h3 style="border:none;padding:0;font-size:1.1rem;">Interest registered</h3>
+        <p style="color:var(--gray);font-size:0.875rem;margin-top:0.5rem;">Our team will be in touch shortly.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <strong>SparxX Ltd</strong>
+    </div>
+    <ul class="footer-links">
+      <li><a href="#products">Products</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#applications">Applications</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="footer-copy">© 2025 SparxX Ltd</div>
+  </div>
+</footer>
+
+<script>
+  let menuOpen = false;
+  function toggleMobile() {
+    menuOpen = !menuOpen;
+    const overlay = document.getElementById('mobileMenu');
+    const h1 = document.getElementById('h1');
+    const h2 = document.getElementById('h2');
+    overlay.classList.toggle('open', menuOpen);
+    if (menuOpen) {
+      h1.style.transform = 'translateY(7px) rotate(45deg)';
+      h2.style.transform = 'translateY(-7px) rotate(-45deg)';
+    } else {
+      h1.style.transform = '';
+      h2.style.transform = '';
+    }
+  }
+  function closeMobile() {
+    menuOpen = false;
+    document.getElementById('mobileMenu').classList.remove('open');
+    document.getElementById('h1').style.transform = '';
+    document.getElementById('h2').style.transform = '';
+  }
+  document.querySelectorAll('.flip-card').forEach(function(card) {
+    card.addEventListener('mouseenter', function() {
+      if (!this.classList.contains('flipped')) this.classList.add('hovered');
+    });
+    card.addEventListener('mouseleave', function() {
+      this.classList.remove('hovered');
+    });
+    card.addEventListener('click', function() {
+      this.classList.remove('hovered');
+      this.classList.toggle('flipped');
+    });
+  });
+
+  function toggleFaq(el) {
+    const item = el.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+  function toggleAppCard(el) {
+    el.classList.remove('hovered');
+    const isFlipped = el.classList.toggle('flipped');
+    el.setAttribute('aria-pressed', isFlipped ? 'true' : 'false');
+  }
+  function appCardKey(e, el) {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      toggleAppCard(el);
+    }
+  }
+  document.querySelectorAll('.app-card').forEach(function(card) {
+    card.addEventListener('mouseenter', function() {
+      if (!this.classList.contains('flipped')) this.classList.add('hovered');
+    });
+    card.addEventListener('mouseleave', function() {
+      this.classList.remove('hovered');
+    });
+  });
+  var SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyMvQ8yFO1nws6_7O8JDLSyoQaz1tsJ3VHiF_ANoNmH9EiCbDEjbTyJPdPIO8aILeApGA/exec';
+
+  function submitForm() {
+    var firstName = document.getElementById('f-firstName').value.trim();
+    var lastName  = document.getElementById('f-lastName').value.trim();
+    var email     = document.getElementById('f-email').value.trim();
+    var country   = document.getElementById('f-country').value;
+    var series    = Array.from(document.querySelectorAll('input[name="series"]:checked')).map(function(c){ return c.value; }).join(', ');
+    var err       = document.getElementById('f-error');
+
+    err.style.display = 'none';
+    if (!firstName || !lastName) { err.textContent = 'Please enter your full name.'; err.style.display = 'block'; return; }
+    if (!email || !/\S+@\S+\.\S+/.test(email)) { err.textContent = 'Please enter a valid email.'; err.style.display = 'block'; return; }
+    if (!country) { err.textContent = 'Please select your country.'; err.style.display = 'block'; return; }
+    if (!series) { err.textContent = 'Please select at least one Nucleus model.'; err.style.display = 'block'; return; }
+
+    var btn = document.getElementById('f-submit');
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
+
+    var payload = {
+      firstName: firstName,
+      lastName:  lastName,
+      email:     email,
+      phone:     document.getElementById('f-phone').value.trim(),
+      company:   document.getElementById('f-company').value.trim(),
+      country:   country,
+      series:    series,
+      notes:     document.getElementById('f-notes').value.trim()
+    };
+
+    fetch(SCRIPT_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify(payload)
+    }).then(function(res) { return res.json(); })
+      .then(function(data) {
+      if (data.status !== 'ok') throw new Error(data.message || 'Server error');
+      document.getElementById('formFields').classList.add('hide');
+      document.getElementById('formSuccess').classList.add('show');
+    }).catch(function(e) {
+      btn.disabled = false;
+      btn.textContent = 'Register Interest →';
+      console.error('Form submission failed:', e);
+      err.textContent = 'Submission failed. Please try again or email us directly.';
+      err.style.display = 'block';
+    });
+  }
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        entry.target.querySelectorAll(':scope > *').forEach((child, i) => {
+          child.style.transitionDelay = i * 0.07 + 's';
+          child.classList.add('reveal');
+          setTimeout(() => child.classList.add('visible'), i * 70);
+        });
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

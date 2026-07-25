@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://greenh2o.biz/sitemap.xml
