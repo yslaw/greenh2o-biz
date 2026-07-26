@@ -51,7 +51,7 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700;800&family=Manrope:wght@600;700;800&family=IBM+Plex+Sans+Condensed:wght@600;700&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -75,6 +75,7 @@
       --text: #0b1c30;
       --heading: 'Manrope', sans-serif;
       --body: 'Hanken Grotesk', system-ui, sans-serif;
+      --logo-font: 'IBM Plex Sans Condensed', sans-serif;
       --shadow-sm: 0 1px 3px rgba(83,95,116,0.08), 0 1px 2px rgba(83,95,116,0.04);
       --shadow: 0 4px 16px rgba(83,95,116,0.10), 0 2px 6px rgba(83,95,116,0.05);
       --shadow-lg: 0 16px 40px rgba(83,95,116,0.14), 0 4px 14px rgba(83,95,116,0.06);
@@ -146,7 +147,7 @@
       line-height: 1.1;
     }
     .nav-logo-text strong {
-      font-family: var(--heading);
+      font-family: var(--logo-font);
       font-size: 2rem;
       font-weight: 700;
       color: var(--navy);
@@ -1821,7 +1822,7 @@
     <div class="contact-info">
       <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:1.5rem;">
         <img src="assets/greenh2o-logo.png" alt="GreenH2O Technology logo" style="height:48px;width:auto;display:block;" />
-        <span style="font-family:var(--heading);font-size:1.6rem;font-weight:700;color:var(--white);letter-spacing:0.01em;">GreenH2O Technology</span>
+        <span style="font-family:var(--logo-font);font-size:1.6rem;font-weight:700;color:var(--white);letter-spacing:0.01em;">GreenH2O Technology</span>
       </div>
       <div class="section-label" style="color:var(--green2)"><span style="background:var(--green2);width:24px;height:2px;display:inline-block;margin-right:0.6rem;vertical-align:middle;"></span>Register Interest</div>
       <h2>Interested in the Nucleus?</h2>
