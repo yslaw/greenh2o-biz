@@ -1,4 +1,4 @@
-# Design System: GreenH2O Technology — Vitality Industrial
+# Design System: GreenH2O Power Technology — Vitality Industrial
 
 ## 1. Visual Theme & Atmosphere
 Evidence-led B2B site for a hydrogen-on-demand retrofit product. Industrial precision + ecological responsibility: a light slate-blue canvas with deep ocean-navy panels for header/hero/footer/dark sections, emerald-green as the primary accent (CTAs, evidence figures, links), hydrogen-blue reserved for interactive/focus moments (form focus rings, hero gradient). Density: Daily App Balanced. Motion: fluid CSS (scroll-reveal fades, 3D flip cards), no cinematic choreography. Mood: a technical brief from an institution that also ships consumer-grade software — data-forward, not sales-forward.
@@ -27,7 +27,7 @@ Two-accent system: emerald carries weight (CTAs, evidence), hydrogen-blue is res
 ## 3. Typography
 - **Display:** Manrope (600–800) — headings, evidence figures, product model numbers
 - **Body:** Hanken Grotesk (300–800) — paragraphs, nav links, form labels, ~65ch max
-- **Logo wordmark:** IBM Plex Sans Condensed (700) — `--logo-font`, used only for the "GreenH2O Technology" text next to the icon mark (nav + dark contact section). Scoped deliberately separate from `--heading` so a global heading-font change never touches the wordmark, and vice versa.
+- **Logo wordmark:** IBM Plex Sans Condensed (700) — `--logo-font`, used only for the "GreenH2O Power Technology" text next to the icon mark (nav + dark contact section). Scoped deliberately separate from `--heading` so a global heading-font change never touches the wordmark, and vice versa.
 - **Banned:** Inter, generic serifs
 
 The logo itself is an icon-only mark (no baked-in wordmark), so every placement pairs `<img>` + a text span rather than expecting one image to carry the brand name.
@@ -48,7 +48,7 @@ Shadows are soft/diffused, tinted with `--gray` at 4–14% opacity rather than b
 
 ## 5. Component Patterns
 
-**Nav** — sticky, white, 68px bar. Icon mark (48px) + `--logo-font` wordmark, flex-paired. Links get a `--green-pale` hover fill; CTA is a solid green pill that darkens to `--emerald-deep` on hover. Mobile collapses to a hamburger driving a full-screen navy-on-white overlay with staggered link fade-in (50ms step).
+**Nav** — sticky, white, 68px bar. Icon mark (48px, 40px at 480px and below) + `--logo-font` wordmark, flex-paired. The company name is long, so the wordmark is fluid (`clamp` on `vw`, 2rem at most) and the links fold into the hamburger at 1024px, not 768px. After any change to the name or the link list, measure the bar at 375, 769–1100 and 1280. Links get a `--green-pale` hover fill; CTA is a solid green pill that darkens to `--emerald-deep` on hover. Mobile collapses to a hamburger driving a full-screen navy-on-white overlay with staggered link fade-in (50ms step).
 
 **Hero** — full-bleed `--navy`, layered: faint 48px grid-line texture, an optional video background, a dual radial-gradient (emerald at top-right, hydrogen-blue at bottom-left — literally the hydrogen+water duality of the brand), a flat 50%-opacity navy scrim on top for text contrast, and a 4px left accent line fading in/out vertically.
 

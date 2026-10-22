@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GreenH2O Technology Sdn Bhd | Nucleus Hydrolyzer</title>
+  <title>GreenH2O Power Technology Sdn Bhd | Nucleus Hydrolyzer</title>
   <meta name="description" content="Advanced hydrogen-on-demand systems that make combustion cleaner, more efficient, and ready for the low-carbon economy." />
   <link rel="canonical" href="https://greenh2o.biz/" />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="GreenH2O Technology" />
-  <meta property="og:title" content="GreenH2O Technology Sdn Bhd | Nucleus Hydrolyzer" />
+  <meta property="og:site_name" content="GreenH2O Power Technology" />
+  <meta property="og:title" content="GreenH2O Power Technology Sdn Bhd | Nucleus Hydrolyzer" />
   <meta property="og:description" content="Advanced hydrogen-on-demand systems that make combustion cleaner, more efficient, and ready for the low-carbon economy." />
   <meta property="og:url" content="https://greenh2o.biz/" />
   <meta property="og:image" content="https://greenh2o.biz/assets/n3-banner.png" />
   <meta property="og:locale" content="en_MY" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="GreenH2O Technology Sdn Bhd | Nucleus Hydrolyzer" />
+  <meta name="twitter:title" content="GreenH2O Power Technology Sdn Bhd | Nucleus Hydrolyzer" />
   <meta name="twitter:description" content="Advanced hydrogen-on-demand systems that make combustion cleaner, more efficient, and ready for the low-carbon economy." />
   <meta name="twitter:image" content="https://greenh2o.biz/assets/n3-banner.png" />
 
@@ -25,7 +25,7 @@
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "GreenH2O Technology Sdn Bhd",
+    "name": "GreenH2O Power Technology Sdn Bhd",
     "url": "https://greenh2o.biz/",
     "logo": "https://greenh2o.biz/assets/greenh2o-logo.png",
     "description": "Developer of the Nucleus hydrogen-on-demand hydrolyzer system for internal combustion engines.",
@@ -43,10 +43,10 @@
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "Nucleus Hydrolyzer",
-    "brand": { "@type": "Brand", "name": "GreenH2O Technology" },
+    "brand": { "@type": "Brand", "name": "GreenH2O Power Technology" },
     "description": "Hydrogen-on-demand system that retrofits to existing internal combustion engines, cutting fuel consumption and emissions without engine modification.",
     "image": "https://greenh2o.biz/assets/n3-banner.png",
-    "manufacturer": { "@type": "Organization", "name": "GreenH2O Technology Sdn Bhd" }
+    "manufacturer": { "@type": "Organization", "name": "GreenH2O Power Technology Sdn Bhd" }
   }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -148,7 +148,7 @@
     }
     .nav-logo-text strong {
       font-family: var(--logo-font);
-      font-size: 2rem;
+      font-size: clamp(1.4rem, 2.2vw, 2rem);
       font-weight: 700;
       color: var(--navy);
       letter-spacing: 0.01em;
@@ -1181,10 +1181,13 @@
     .reveal.visible { opacity: 1; transform: translateY(0); }
 
     /* ── RESPONSIVE ── */
+    @media (max-width: 1024px) {
+      .nav-links, .nav-cta { display: none; }
+      .hamburger { display: flex; margin-left: auto; }
+      .nav-logo-text strong { font-size: clamp(0.9rem, 4.6vw, 1.75rem); }
+    }
     @media (max-width: 768px) {
       .topbar { display: none; }
-      .nav-links, .nav-cta { display: none; }
-      .hamburger { display: flex; }
       .hero-inner { padding: 4rem 1.5rem; }
       .evidence-inner { grid-template-columns: repeat(2, 1fr); gap: 2rem 0; padding: 2rem 1.5rem; }
       .evidence-item { border-right: none; padding: 0; }
@@ -1207,6 +1210,8 @@
       .map-card { padding: 1.25rem; }
     }
     @media (max-width: 480px) {
+      .nav-inner { padding: 0 1rem; gap: 0.75rem; }
+      .nav-logo-mark { height: 40px; }
       .evidence-inner { grid-template-columns: 1fr; padding: 2rem 1.5rem; gap: 1.5rem; }
       .evidence-item, .evidence-item:nth-child(odd) { border-right: none; padding: 0 0 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.08); }
       .evidence-item:last-child { border-bottom: none; padding-bottom: 0; }
@@ -1318,8 +1323,8 @@
 <nav>
   <div class="nav-inner">
     <a href="#home" class="nav-logo">
-      <img class="nav-logo-mark" src="assets/greenh2o-logo.png" alt="GreenH2O Technology logo" />
-      <span class="nav-logo-text"><strong>GreenH2O Technology</strong></span>
+      <img class="nav-logo-mark" src="assets/greenh2o-logo.png" alt="GreenH2O Power Technology logo" />
+      <span class="nav-logo-text"><strong>GreenH2O Power Technology</strong></span>
     </a>
     <ul class="nav-links">
       <li><a href="#products">Products</a></li>
@@ -1348,7 +1353,7 @@
       <div class="hero-tag"><div class="hero-tag-dot"></div>Hydrogen-on-Demand Technology</div>
       <p class="hero-kicker">Drive your dollar further.</p>
       <h1>Cleaner Combustion.<br/><em>Proven Results.</em></h1>
-      <p class="hero-sub">GreenH2O Technology develops advanced hydrogen-on-demand systems that reduce fuel consumption, cut emissions, and deliver measurable ROI — without modifying your engine.</p>
+      <p class="hero-sub">GreenH2O Power Technology develops advanced hydrogen-on-demand systems that reduce fuel consumption, cut emissions, and deliver measurable ROI — without modifying your engine.</p>
       <div class="hero-actions">
         <a href="#products" class="btn-primary">View Products &rarr;</a>
         <a href="#contact" class="btn-outline">Register Your Interest</a>
@@ -1490,9 +1495,9 @@
   <div class="section-inner">
     <div class="about-text">
       <div class="section-label">Our Company</div>
-      <h2>About GreenH2O Technology Sdn Bhd</h2>
+      <h2>About GreenH2O Power Technology Sdn Bhd</h2>
       <p class="section-tagline">Enriching the present, the future, and beyond.</p>
-      <p><strong>GreenH2O Technology Sdn Bhd</strong> is a deep-tech company developing, designing, manufacturing, and marketing the Nucleus system — a next-generation hydrogen-on-demand technology that converts internal combustion and diesel engines into cleaner, more efficient engines, offering a scalable answer to the global fuel crisis.</p>
+      <p><strong>GreenH2O Power Technology Sdn Bhd</strong> is a deep-tech company developing, designing, manufacturing, and marketing the Nucleus system — a next-generation hydrogen-on-demand technology that converts internal combustion and diesel engines into cleaner, more efficient engines, offering a scalable answer to the global fuel crisis.</p>
       <p>The Nucleus supplements fuel by increasing octane and cetane levels, enhancing the vehicle's ability to burn all injected fuel completely. It cuts emissions by up to 70% or more, reduces petrol consumption by up to 45% or more, and diesel by up to 40% or more.</p>
       <p>R&D commenced in 2008. The team successfully harnessed hydrogen through electrolysis — splitting water into hydrogen and oxygen. The first prototype was ready in 2010, followed by upgraded new generation models and rigorous testing across multiple countries to ensure quality, performance and stable results.</p>
       <div class="about-stats">
@@ -1560,7 +1565,7 @@
           </div></div>
         </div>
         <div class="contact-block">
-          <strong>GreenH2O Technology Sdn Bhd</strong>
+          <strong>GreenH2O Power Technology Sdn Bhd</strong>
           30-2, Jalan Metro Pudu, Fraser Business Park,<br/>
           Off Jalan Yew, 55100 Kuala Lumpur.
         </div>
@@ -1821,8 +1826,8 @@
   <div class="contact-grid">
     <div class="contact-info">
       <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:1.5rem;">
-        <img src="assets/greenh2o-logo.png" alt="GreenH2O Technology logo" style="height:48px;width:auto;display:block;" />
-        <span style="font-family:var(--logo-font);font-size:1.6rem;font-weight:700;color:var(--white);letter-spacing:0.01em;">GreenH2O Technology</span>
+        <img src="assets/greenh2o-logo.png" alt="GreenH2O Power Technology logo" style="height:48px;width:auto;display:block;" />
+        <span style="font-family:var(--logo-font);font-size:clamp(1.1rem,5vw,1.6rem);font-weight:700;color:var(--white);letter-spacing:0.01em;">GreenH2O Power Technology</span>
       </div>
       <div class="section-label" style="color:var(--green2)"><span style="background:var(--green2);width:24px;height:2px;display:inline-block;margin-right:0.6rem;vertical-align:middle;"></span>Register Interest</div>
       <h2>Interested in the Nucleus?</h2>
@@ -1833,7 +1838,7 @@
       </div>
       <div class="contact-detail">
         <div class="contact-detail-icon">Co.</div>
-        <div class="contact-detail-text"><strong>GreenH2O Technology Sdn Bhd</strong></div>
+        <div class="contact-detail-text"><strong>GreenH2O Power Technology Sdn Bhd</strong></div>
       </div>
       <div class="contact-detail">
         <div class="contact-detail-icon">@</div>
@@ -1906,7 +1911,7 @@
 <footer>
   <div class="footer-inner">
     <div class="footer-brand">
-      <strong>GreenH2O Technology Sdn Bhd</strong>
+      <strong>GreenH2O Power Technology Sdn Bhd</strong>
     </div>
     <ul class="footer-links">
       <li><a href="#products">Products</a></li>
@@ -1915,7 +1920,7 @@
       <li><a href="#faq">FAQ</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <div class="footer-copy">© 2025 GreenH2O Technology Sdn Bhd</div>
+    <div class="footer-copy">© 2025 GreenH2O Power Technology Sdn Bhd</div>
   </div>
 </footer>
 
