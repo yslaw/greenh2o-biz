@@ -45,21 +45,30 @@
   .row.addr .txt { font-size: 1.95mm; line-height: 1.4; }
 
   /* ---------- BACK (logo side) ---------- */
-  .back .logo { position: absolute; left: 50%; top: 5.2mm; width: 26mm; transform: translateX(-50%); }
+  .back .logo { position: absolute; left: 50%; top: 3.6mm; width: 23mm; transform: translateX(-50%); }
+  .back .stack { position: absolute; left: 0; right: 0; top: 29.5mm; display: flex; flex-direction: column; align-items: center; }
+  .back .lockup { line-height: 0; font-size: 0; display: flex; flex-direction: column; align-items: center; }
+  .back .brand { line-height: 1 !important; }
   .back .brand {
-    position: absolute; left: 0; right: 0; top: 33mm; text-align: center;
-    font-family: 'Michroma', sans-serif; font-size: 4.6mm; letter-spacing: .25mm;
+    display: inline-block; font-family: 'Michroma', sans-serif; font-size: 4.6mm; letter-spacing: .25mm;
+    line-height: 1; white-space: nowrap;
   }
-  .back .brand sub { font-size: 2.4mm; vertical-align: -.35mm; letter-spacing: 0; }
+  .back .brand sub { font-size: 2.4mm; vertical-align: baseline; position: relative; top: .35mm; letter-spacing: 0; line-height: 0; }
+  /* .co letter-spacing is stretched by script below so its width matches .brand exactly */
   .back .co {
-    position: absolute; left: 0; right: 0; top: 40.3mm; text-align: center;
-    font-family: 'Michroma', sans-serif; font-size: 1.75mm; letter-spacing: .1mm;
+    display: block; margin-top: 1.6mm; font-family: 'Michroma', sans-serif; font-size: 1.55mm;
+    line-height: 1; white-space: nowrap; text-align: left;
   }
-  .back .tag {
-    position: absolute; left: 50%; top: 45.2mm; transform: translateX(-50%);
-    background: #4a4c51; padding: .25mm 1.2mm; white-space: nowrap;
+  .back .main {
+    margin-top: 3.2mm;
+    background: #4a4c51; padding: .3mm 1.6mm; white-space: nowrap;
     font-family: 'Saira Condensed', sans-serif; font-style: italic; font-weight: 700;
-    font-size: 2.15mm; letter-spacing: .12mm; color: #f2f4f7;
+    font-size: 2.6mm; letter-spacing: .15mm; text-transform: uppercase; color: #f2f4f7;
+  }
+  .back .sub {
+    margin-top: 2mm; text-align: center; line-height: 1.2;
+    font-family: 'Poppins', sans-serif; font-style: italic; font-size: 1.9mm; letter-spacing: .08mm;
+    color: #c9ced6;
   }
 </style>
 </head>
@@ -99,10 +108,28 @@
 <!-- BACK -->
 <section class="card back">
   <img class="logo" src="logo-dark.png" alt="GreenH2O logo">
-  <div class="brand">GREENH<sub>2</sub>O</div>
-  <div class="co">POWER TECHNOLOGY SDN BHD</div>
-  <div class="tag">MANUFACTURER OF GREEN TECHNOLOGY HYDROLYZER</div>
+  <div class="stack">
+  <div class="lockup">
+    <div class="brand">GREENH<sub>2</sub>O</div>
+    <span class="co">POWER TECHNOLOGY SDN BHD</span>
+  </div>
+  <div class="main">Drive your dollar further</div>
+  <div class="sub">Enriching present, future, and beyond</div>
+  </div>
 </section>
 
+<script>
+  // Stretch company line to the exact width of the GREENH2O wordmark
+  document.fonts.ready.then(() => {
+    const b = document.querySelector('.back .brand'), c = document.querySelector('.back .co');
+    // brand has trailing letter-spacing after last glyph; exclude it
+    const bw = b.getBoundingClientRect().width - parseFloat(getComputedStyle(b).letterSpacing);
+    c.style.letterSpacing = '0px'; c.style.display = 'inline-block';
+    const n = c.textContent.length, cw = c.getBoundingClientRect().width;
+    const ls = (bw - cw) / (n - 1);
+    c.style.letterSpacing = ls + 'px'; c.style.marginRight = (-ls) + 'px'; c.style.display = 'block';
+    document.body.dataset.fitted = '1';
+  });
+</script>
 </body>
 </html>
