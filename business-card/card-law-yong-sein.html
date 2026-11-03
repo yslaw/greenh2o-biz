@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GreenH2O Business Card</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Michroma&family=Poppins:wght@400;500;600&family=Saira+Condensed:ital,wght@1,700&display=swap" rel="stylesheet">
+<style>
+  /* Card: 90 x 54 mm (Malaysia standard). Print with 3 mm bleed handled by printer. */
+  @page { size: 340px 204px; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #1c1d1f; }
+  body { display: flex; flex-direction: column; gap: 8mm; padding: 8mm; align-items: center; }
+  @media print { html, body { background: #18191b; } body { padding: 0; gap: 0; } .card { width: calc(100vw + 2px); height: calc(100vh + 2px); } }
+
+  .card {
+    width: 340px; height: 204px; position: relative; overflow: hidden; /* = 90 x 54 mm, whole px avoids edge seams */
+    background: radial-gradient(120% 140% at 30% 40%, #2b2d31 0%, #202124 55%, #18191b 100%);
+    color: #f2f4f7; font-family: 'Poppins', sans-serif;
+    page-break-after: always; break-after: page;
+  }
+
+  /* ---------- FRONT (contact side) ---------- */
+  .front .logo { position: absolute; left: 3.6mm; top: 12.5mm; width: 29mm; }
+  .front .name {
+    position: absolute; right: 4.3mm; top: 4.6mm;
+    font-family: 'Michroma', sans-serif; font-size: 3.55mm; letter-spacing: .05mm; white-space: nowrap;
+  }
+  .front .title {
+    position: absolute; right: 4.6mm; top: 11mm;
+    font-weight: 600; font-size: 1.95mm; letter-spacing: .32mm;
+  }
+  .front .rule { position: absolute; right: 4.6mm; top: 15.6mm; width: 31.5mm; height: .3mm; background: #f2f4f7; }
+
+  .rows { position: absolute; left: 34.6mm; right: 4.6mm; top: 19.6mm; }
+  .row { display: flex; align-items: center; justify-content: space-between; height: 5.25mm; }
+  .row.addr { align-items: flex-start; height: auto; margin-top: .9mm; }
+  .ico { width: 3mm; height: 3mm; border-radius: 50%; background: #f2f4f7; flex: none;
+         display: grid; place-items: center; }
+  .ico svg { width: 1.8mm; height: 1.8mm; fill: #202124; }
+  .ico.mail { border-radius: .4mm; background: none; }
+  .ico.mail svg { width: 3mm; height: 3mm; fill: none; stroke: #f2f4f7; stroke-width: 1.4; }
+  .txt { font-size: 2.15mm; text-align: right; line-height: 1.25; }
+  .txt.web { font-size: 2.35mm; font-weight: 500; }
+  .row.addr .txt { font-size: 1.95mm; line-height: 1.4; }
+
+  /* ---------- BACK (logo side) ---------- */
+  .back .logo { position: absolute; left: 50%; top: 3.6mm; width: 23mm; transform: translateX(-50%); }
+  .back .stack { position: absolute; left: 0; right: 0; top: 29.5mm; display: flex; flex-direction: column; align-items: center; }
+  .back .lockup { line-height: 0; font-size: 0; display: flex; flex-direction: column; align-items: center; }
+  .back .brand { line-height: 1 !important; }
+  .back .brand {
+    display: inline-block; font-family: 'Michroma', sans-serif; font-size: 4.6mm; letter-spacing: .25mm;
+    line-height: 1; white-space: nowrap;
+  }
+  .back .brand sub { font-size: 2.4mm; vertical-align: baseline; position: relative; top: .35mm; letter-spacing: 0; line-height: 0; }
+  /* .co letter-spacing is stretched by script below so its width matches .brand exactly */
+  .back .co {
+    display: block; margin-top: 1.6mm; font-family: 'Michroma', sans-serif; font-size: 1.55mm;
+    line-height: 1; white-space: nowrap; text-align: left;
+  }
+  .back .main {
+    margin-top: 3.2mm;
+    background: #4a4c51; padding: .3mm 1.6mm; white-space: nowrap;
+    font-family: 'Saira Condensed', sans-serif; font-style: italic; font-weight: 700;
+    font-size: 2.6mm; letter-spacing: .15mm; text-transform: uppercase; color: #f2f4f7;
+  }
+  .back .sub {
+    margin-top: 2mm; text-align: center; line-height: 1.2;
+    font-family: 'Poppins', sans-serif; font-style: italic; font-size: 1.9mm; letter-spacing: .08mm;
+    color: #c9ced6;
+  }
+</style>
+</head>
+<body>
+
+<!-- FRONT -->
+<section class="card front">
+  <img class="logo" src="logo-dark.png" alt="GreenH2O logo">
+  <div class="name">LAW YONG SEIN</div>
+  <div class="title">DIRECTOR</div>
+  <div class="rule"></div>
+
+  <div class="rows">
+    <div class="row">
+      <span class="ico"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></span>
+      <span class="txt">(Hunting Line) +603-9226 1133</span>
+    </div>
+    <div class="row">
+      <span class="ico"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></span>
+      <span class="txt">(Mobile) +6010-226 1608</span>
+    </div>
+    <div class="row">
+      <span class="ico mail"><svg viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="1"/><path d="M2.5 5.5l9.5 8 9.5-8"/></svg></span>
+      <span class="txt">lawyongsein@nucleus.green</span>
+    </div>
+    <div class="row">
+      <span class="ico"><svg viewBox="0 0 24 24" style="fill:none;stroke:#202124;stroke-width:1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.8 3 2.8 15 0 18M12 3c-2.8 3-2.8 15 0 18"/></svg></span>
+      <span class="txt web">greenh2o.biz</span>
+    </div>
+    <div class="row addr">
+      <span class="ico"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg></span>
+      <span class="txt">30-2, Jalan Metro Pudu, Fraser Business Park,<br>Off Jalan Yew, 55100 Kuala Lumpur, W.P.<br>Malaysia</span>
+    </div>
+  </div>
+</section>
+
+<!-- BACK -->
+<section class="card back">
+  <img class="logo" src="logo-dark.png" alt="GreenH2O logo">
+  <div class="stack">
+  <div class="lockup">
+    <div class="brand">GREENH<sub>2</sub>O</div>
+    <span class="co">POWER TECHNOLOGY SDN BHD</span>
+  </div>
+  <div class="main">Drive your dollar further</div>
+  <div class="sub">Enriching present, future, and beyond</div>
+  </div>
+</section>
+
+<script>
+  // Stretch company line to the exact width of the GREENH2O wordmark
+  document.fonts.ready.then(() => {
+    const b = document.querySelector('.back .brand'), c = document.querySelector('.back .co');
+    // brand has trailing letter-spacing after last glyph; exclude it
+    const bw = b.getBoundingClientRect().width - parseFloat(getComputedStyle(b).letterSpacing);
+    c.style.letterSpacing = '0px'; c.style.display = 'inline-block';
+    const n = c.textContent.length, cw = c.getBoundingClientRect().width;
+    const ls = (bw - cw) / (n - 1);
+    c.style.letterSpacing = ls + 'px'; c.style.marginRight = (-ls) + 'px'; c.style.display = 'block';
+    document.body.dataset.fitted = '1';
+  });
+</script>
+</body>
+</html>
