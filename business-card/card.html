@@ -7,14 +7,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Poppins:wght@400;500;600&family=Saira+Condensed:ital,wght@1,700&display=swap" rel="stylesheet">
 <style>
   /* Card: 90 x 54 mm (Malaysia standard). Print with 3 mm bleed handled by printer. */
-  @page { size: 90mm 54mm; margin: 0; }
+  @page { size: 340px 204px; margin: 0; }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html, body { background: #1c1d1f; }
   body { display: flex; flex-direction: column; gap: 8mm; padding: 8mm; align-items: center; }
-  @media print { html, body { background: none; } body { padding: 0; gap: 0; } }
+  @media print { html, body { background: #18191b; } body { padding: 0; gap: 0; } .card { width: calc(100vw + 2px); height: calc(100vh + 2px); } }
 
   .card {
-    width: 90mm; height: 54mm; position: relative; overflow: hidden;
+    width: 340px; height: 204px; position: relative; overflow: hidden; /* = 90 x 54 mm, whole px avoids edge seams */
     background: radial-gradient(120% 140% at 30% 40%, #2b2d31 0%, #202124 55%, #18191b 100%);
     color: #f2f4f7; font-family: 'Poppins', sans-serif;
     page-break-after: always; break-after: page;
